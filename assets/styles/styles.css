@@ -624,7 +624,7 @@ header .menu-header .frame39 .frame86 button a {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.22rem;
+  line-height: 24.38px;
   text-align: center;
   color: white;
 }
@@ -670,9 +670,8 @@ header .menu-header .frame39 .frame86 button a {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
-  line-height: 33.1px;
-  padding: 20px;
-  padding-bottom: 0px;
+  line-height: 24.28px;
+  padding: 0px 20px;
   text-align: center;
   color: #011E41;
 }
@@ -722,7 +721,6 @@ header .menu-header .frame39 .frame86 button a {
 }
 .Main .frame92 .frame84 .frame83 .acordeon .contenido-acordeon {
   padding: 0px;
-  margin: 0px 20px;
   max-height: 0px;
   overflow: hidden;
   opacity: 0;
@@ -734,6 +732,7 @@ header .menu-header .frame39 .frame86 button a {
   line-height: 27.12px;
   color: #323232;
   max-width: 840px;
+  padding-bottom: 35px;
 }
 .Main .frame92 .frame84 .frame83 .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
   max-height: -moz-max-content;
@@ -818,7 +817,6 @@ header .menu-header .frame39 .frame86 button a {
   line-height: 33.1px;
   padding: 0px 50px;
   padding-bottom: 0px;
-  margin-bottom: 20px;
   text-align: center;
   color: #011E41;
 }
@@ -951,20 +949,17 @@ header .menu-header .frame39 .frame86 button a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: calc(100% - 124px);
   color: white;
   align-items: center;
   margin: auto;
   gap: 0px;
 }
 .Main .frame45 .frame42 .frame51 .inputs-container {
-  width: calc(100% - 62px);
   display: flex;
   flex-direction: column;
 }
 .Main .frame45 .frame42 .frame51 .inputs-container .inputs-text input {
   width: 100%;
-  min-width: calc(100% - 62px);
   min-height: 40px;
   margin-bottom: 20px;
   border: none;
@@ -1029,7 +1024,7 @@ header .menu-header .frame39 .frame86 button a {
     height: 100%;
   }
   .Main .frame45 .frame42 {
-    max-width: 1051px;
+    max-width: 100%;
     display: flex;
     margin: 0 auto;
     gap: 80px;
@@ -1073,5 +1068,163 @@ header .menu-header .frame39 .frame86 button a {
   .Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox input[type=checkbox] {
     width: 20px;
     height: 20px;
+  }
+}
+.Main .frame81 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 27px 20px 42px 20px;
+}
+.Main .frame81 .frame80 {
+  padding: 10px 0px;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+.Main .frame81 .frame80 .frame79 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 5px;
+}
+.Main .frame81 .frame80 .frame79 .frame78 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+.Main .frame81 .frame80 .frame79 img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+footer .frame49 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  padding-bottom: 0px;
+}
+footer .frame49::before {
+  content: "";
+  display: block;
+  min-width: 100%;
+  justify-self: center;
+  margin-bottom: 20px;
+  height: 3px;
+  background-color: #BDBDBD;
+}
+footer .frame49 .frame48 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 30px;
+}
+footer .frame49 .frame48 img {
+  width: auto;
+  max-width: 100%;
+}
+footer .frame49 .frame48 h3 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+}
+footer .frame49 .frame48 p {
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  margin-bottom: 0px;
+  max-width: 60%;
+  width: 100%;
+  text-align: center;
+}
+footer .frame49 .frame48 .frame47 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .frame49 .frame48 .frame47 p {
+  max-width: 100%;
+}
+footer .frame49 .frame48 .frame45 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+footer .frame49 .frame48 .frame45 .rrss {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+footer .frame49 .frame48 .frame45 .rrss .logo img {
+  max-width: 24px;
+  max-height: 24px;
+}
+footer .condiciones-footer .frame46 {
+  margin-bottom: 15px;
+}
+footer .condiciones-footer .frame46 .frame3 .aviso-legal {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+}
+footer .condiciones-footer .frame46 .frame3 .aviso-legal p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+}
+@media (min-width: 1024px) {
+  footer .frame49 {
+    max-height: 127px;
+  }
+  footer .frame49 .frame48 {
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 96px;
+  }
+  footer .frame49 .frame48 #logoCruzRoja {
+    max-width: 496px;
+    width: 100%;
+    max-height: 100;
+    height: auto;
+  }
+  footer .frame49 .frame48 .frame47, footer .frame49 .frame48 .frame45 {
+    align-items: flex-start;
+  }
+  footer .frame49 .frame48 p {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  footer .condiciones-footer {
+    margin-bottom: 15px;
+  }
+  footer .condiciones-footer .frame46 .frame3 .aviso-legal {
+    padding: 0px;
+    line-height: 46px;
+    gap: 15px;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=styles.css.map */

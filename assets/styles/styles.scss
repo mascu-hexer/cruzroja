@@ -686,7 +686,6 @@ header{
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         }
     }
-
     @media (min-width: $laptop) {
         .frame97 {
             width: 100%;
@@ -733,7 +732,7 @@ header{
                 font-family: "Montserrat", sans-serif;
                 font-size: 20px;
                 font-weight: 700;
-                line-height: 1.22rem;
+                line-height: 24.38px;
                 text-align: center;
                 color: white;
             }
@@ -785,9 +784,8 @@ header{
                 font-family: "Montserrat";
                 font-size: 20px;
                 font-weight: 600;
-                line-height: 33.1px;
-                padding: 20px;
-                padding-bottom: 0px;
+                line-height: 24.28px;
+                padding: 0px 20px;
                 text-align: center;
                 color: $corporative-blue;
     
@@ -843,7 +841,7 @@ header{
     
                     .contenido-acordeon {
                         padding: 0px;
-                        margin: 0px 20px;
+                        //margin: 0px 20px;
                         max-height: 0px; 
                         overflow: hidden;
                         opacity: 0; 
@@ -855,6 +853,7 @@ header{
                             line-height: 27.12px;
                             color: $corporative-text;
                             max-width: 840px;
+                            padding-bottom: 35px;
                         }
                     }
     
@@ -879,7 +878,6 @@ header{
             }
         }
     }
-    
     @media (min-width: $laptop) {
         .frame92 {
             margin: 0 auto;
@@ -964,7 +962,7 @@ header{
             line-height: 33.1px;
             padding: 0px 50px;
             padding-bottom: 0px;
-            margin-bottom: 20px;
+            //margin-bottom: 20px;
             text-align: center;
             color: $corporative-blue;
 
@@ -1120,20 +1118,20 @@ header{
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                min-width: calc(100% - 124px); 
+                //min-width: calc(100% - 124px); 
                 color: white;
                 align-items: center;
                 margin: auto;
                 gap: 0px;
 
                 .inputs-container{
-                    width: calc(100% - 62px); ; // Asegúrate de que el contenedor tenga un ancho definido
+                    //width: calc(100% - 62px); ; // Asegúrate de que el contenedor tenga un ancho definido
                     display: flex;
                     flex-direction: column;
                     .inputs-text{
                         input {
                             width: 100%;
-                            min-width: calc(100% - 62px); 
+                            //min-width: calc(100% - 62px); 
                             min-height: 40px;
                             margin-bottom: 20px;
                             border: none;
@@ -1197,7 +1195,6 @@ header{
             }
         }
     }
-    
     @media (min-width: $laptop){
         .frame45 {
             width: 100%;
@@ -1205,7 +1202,7 @@ header{
 
 
             .frame42{
-                max-width: 1051px;
+                max-width: 100%;
                 display: flex;
                 margin: 0 auto;
                 gap: 80px;
@@ -1263,5 +1260,187 @@ header{
                 }
             }
         }
+    }
+
+    .frame81{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 27px 20px 42px 20px;
+        .frame80{
+            padding: 10px 0px;
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            .frame79{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 100%;
+                gap: 5px;
+                .frame78 {
+                    display: flex;                    
+                    width: 100%;
+                    height: 100%;
+                    gap: 5px;
+                }
+    
+                img {                    
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media (min-width: $laptop){
+
+    }
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap:20px;
+    
+    .frame49{
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        max-width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        padding-bottom: 0px;
+        
+        &::before {
+            content: "";
+            display: block;
+            min-width: 100%;
+            justify-self: center;
+            margin-bottom: 20px;
+            height: 3px;
+            background-color: #BDBDBD;
+        }
+                
+        .frame48{            
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            gap: 30px;
+
+            img{
+                width: auto;
+                max-width: 100%;
+            }
+
+            h3{
+                font-family: "Montserrat";
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21.94px;
+            }
+
+            p{
+                font-family: "OpenSans";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24.51px;
+                margin-bottom: 0px;
+                max-width: 60%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .frame47{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    max-width: 100%;     
+                }
+            }
+
+            .frame45{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                text-align: center;
+                .rrss{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 15px;
+
+                    .logo img{
+                        max-width: 24px;
+                        max-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .condiciones-footer{
+        .frame46{
+            margin-bottom: 15px;
+            .frame3{
+                .aviso-legal{
+                    padding: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    gap:10px;
+                    justify-content: center;
+                    p{
+                        font-family: "Montserrat";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17.07px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $laptop) {
+        .frame49{
+            max-height: 127px;
+            .frame48{
+                flex-direction: row;
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                gap:96px;
+
+                #logoCruzRoja{
+                    max-width: 496px;
+                    width: 100%;
+                    max-height: 100;
+                    height: auto;
+                }
+
+                .frame47, .frame45{
+                    align-items: flex-start;
+                }
+
+                p{
+                    max-width: fit-content;
+                }
+                
+            }
+        }
+        .condiciones-footer {
+            margin-bottom: 15px;
+
+            .frame46 .frame3 .aviso-legal{
+                padding:0px;
+                line-height: 46px;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+        }    
     }
 }
