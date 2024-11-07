@@ -120,7 +120,7 @@ header .menu-header .frame39 .frame86 button a {
   header .window-bar {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
     max-height: 43px;
@@ -1138,6 +1138,14 @@ footer {
   height: 100%;
   gap: 20px;
 }
+footer::before {
+  content: "";
+  display: block;
+  min-width: 100%;
+  justify-self: center;
+  height: 3px;
+  background-color: #BDBDBD;
+}
 footer .frame49 {
   display: flex;
   flex-direction: column;
@@ -1146,27 +1154,17 @@ footer .frame49 {
   padding: 0px 10px;
   padding-bottom: 0px;
 }
-footer .frame49::before {
-  content: "";
-  display: block;
-  min-width: 100%;
-  justify-self: center;
-  margin-bottom: 20px;
-  height: 3px;
-  background-color: #BDBDBD;
-}
 footer .frame49 .frame48 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
   height: 100%;
   align-items: center;
   gap: 30px;
 }
 footer .frame49 .frame48 img {
-  width: auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 490px;
 }
 footer .frame49 .frame48 h3 {
   font-family: "Montserrat";
@@ -1180,17 +1178,23 @@ footer .frame49 .frame48 p {
   font-weight: 400;
   line-height: 24.51px;
   margin-bottom: 0px;
-  max-width: 60%;
   width: 100%;
   text-align: center;
 }
 footer .frame49 .frame48 .frame47 {
   display: flex;
+  width: 100%;
+  max-width: 100%;
   flex-direction: column;
   align-items: center;
 }
 footer .frame49 .frame48 .frame47 p {
   max-width: 100%;
+}
+footer .frame49 .frame48 .address {
+  width: 100%;
+  max-width: 100%;
+  justify-items: center;
 }
 footer .frame49 .frame48 .frame45 {
   display: flex;
@@ -1227,14 +1231,14 @@ footer .condiciones-footer .frame46 .frame3 .aviso-legal p {
 }
 @media (min-width: 1024px) {
   footer .frame49 {
-    max-height: 127px;
+    align-items: center;
   }
   footer .frame49 .frame48 {
     flex-direction: row;
     max-width: 100%;
     width: 100%;
+    max-width: 1200px;
     height: auto;
-    justify-content: center;
     gap: 96px;
   }
   footer .frame49 .frame48 #logoCruzRoja {
@@ -1243,12 +1247,22 @@ footer .condiciones-footer .frame46 .frame3 .aviso-legal p {
     max-height: 100;
     height: auto;
   }
+  footer .frame49 .frame48 .address {
+    width: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  footer .frame49 .frame48 .address p {
+    text-align: left;
+  }
   footer .frame49 .frame48 .frame47, footer .frame49 .frame48 .frame45 {
+    width: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
     align-items: flex-start;
   }
-  footer .frame49 .frame48 p {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+  footer .frame49 .frame48 .frame47 p, footer .frame49 .frame48 .frame45 p {
+    text-align: left;
   }
   footer .condiciones-footer {
     margin-bottom: 15px;

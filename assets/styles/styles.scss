@@ -156,7 +156,7 @@ header{
         .window-bar{
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             width: 100%;
             max-width: 100%;
             max-height: 43px;
@@ -1313,6 +1313,15 @@ footer{
     width: 100%;
     height: 100%;
     gap:20px;
+
+    &::before {
+        content: "";
+        display: block;
+        min-width: 100%;
+        justify-self: center;        
+        height: 3px;
+        background-color: #BDBDBD;
+    }
     
     .frame49{
         display: flex;
@@ -1322,28 +1331,19 @@ footer{
         padding: 0px 10px;
         padding-bottom: 0px;
         
-        &::before {
-            content: "";
-            display: block;
-            min-width: 100%;
-            justify-self: center;
-            margin-bottom: 20px;
-            height: 3px;
-            background-color: #BDBDBD;
-        }
+        
                 
         .frame48{            
             display: flex;
             flex-direction: column;
-            width: 100%;
-            max-width: 1200px;
+            width: 100%;            
             height: 100%;
             align-items: center;
             gap: 30px;
 
             img{
-                width: auto;
-                max-width: 100%;
+                width: 100%;
+                max-width: 490px;
             }
 
             h3{
@@ -1359,18 +1359,25 @@ footer{
                 font-weight: 400;
                 line-height: 24.51px;
                 margin-bottom: 0px;
-                max-width: 60%;
                 width: 100%;
                 text-align: center;
             }
 
             .frame47{
                 display: flex;
+                width: 100%;
+                max-width: 100%;
                 flex-direction: column;
                 align-items: center;
                 p{
                     max-width: 100%;     
                 }
+            }
+
+            .address{
+                width: 100%;
+                max-width: 100%;
+                justify-items: center;
             }
 
             .frame45{
@@ -1415,13 +1422,13 @@ footer{
     }
     @media (min-width: $laptop) {
         .frame49{
-            max-height: 127px;
+            align-items: center;
             .frame48{
                 flex-direction: row;
                 max-width: 100%;
                 width: 100%;
+                max-width: 1200px;
                 height: auto;
-                justify-content: center;
                 gap:96px;
 
                 #logoCruzRoja{
@@ -1431,14 +1438,22 @@ footer{
                     height: auto;
                 }
 
-                .frame47, .frame45{
-                    align-items: flex-start;
+                .address{
+                    width: 100%;
+                    max-width: max-content;
+                    p{
+                        text-align: left;
+                    }
                 }
 
-                p{
-                    max-width: fit-content;
+                .frame47, .frame45{
+                    width: 100%;
+                    max-width: max-content;
+                    align-items: flex-start;
+                    p{
+                        text-align: left;
+                    }
                 }
-                
             }
         }
         .condiciones-footer {
