@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   min-width: 375px;
@@ -113,6 +117,34 @@ header .menu-header .frame39 .frame86 button a {
   color: #F5333F;
   text-decoration: none;
 }
+header .hamburger-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 20px;
+}
+header .hamburger-menu .nav-bar {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 5px;
+}
+header .hamburger-menu .nav-bar li {
+  list-style: none;
+}
+header .hamburger-menu .nav-bar li a {
+  text-decoration: none;
+  color: #011E41;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.94px;
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   header .carrier {
     display: none;
@@ -164,6 +196,32 @@ header .menu-header .frame39 .frame86 button a {
     color: #F5333F;
     text-decoration: none;
   }
+  header .hamburger-menu {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  header .hamburger-menu .nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+  }
+  header .hamburger-menu .nav-bar li {
+    list-style: none;
+  }
+  header .hamburger-menu .nav-bar li a {
+    text-decoration: none;
+    color: #011E41;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    cursor: pointer;
+  }
 }
 
 .Main {
@@ -181,7 +239,7 @@ header .menu-header .frame39 .frame86 button a {
   height: 100%;
   overflow: hidden;
 }
-.Main .rectangle158 img {
+.Main .rectangle158 picture img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -206,18 +264,18 @@ header .menu-header .frame39 .frame86 button a {
   .Main .rectangle158 picture source {
     width: 100%;
     height: 140%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .Main .rectangle158 picture img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
     vertical-align: middle;
   }
 }
-.Main .rectangle201 {
+.Main .rectangle158 .rectangle201 {
   display: flex;
   background-color: #011E41;
   width: 100%;
@@ -227,23 +285,23 @@ header .menu-header .frame39 .frame86 button a {
   padding-bottom: 47px;
   justify-content: center;
 }
-.Main .rectangle201 .frame94 {
+.Main .rectangle158 .rectangle201 .frame94 {
   width: 100%;
   margin-top: -27px;
   background-color: white;
 }
-.Main .rectangle201 .frame94 .titular {
+.Main .rectangle158 .rectangle201 .frame94 .titular {
   padding: 10px;
   gap: 10px;
   background-color: #F5333F;
 }
-.Main .rectangle201 .frame94 .titular .frame33 {
+.Main .rectangle158 .rectangle201 .frame94 .titular .frame33 {
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 10px;
 }
-.Main .rectangle201 .frame94 .titular .frame33 p {
+.Main .rectangle158 .rectangle201 .frame94 .titular .frame33 p {
   font-size: 25px;
   font-weight: 800;
   text-transform: uppercase;
@@ -251,87 +309,87 @@ header .menu-header .frame39 .frame86 button a {
   line-height: 26.48px;
   color: #FFFFFF;
 }
-.Main .rectangle201 .frame94 .titular .frame33 span {
+.Main .rectangle158 .rectangle201 .frame94 .titular .frame33 span {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   line-height: 25.42px;
 }
-.Main .rectangle201 .frame94 .insight {
+.Main .rectangle158 .rectangle201 .frame94 .insight {
   padding: 14.5px;
   padding-left: 12px;
   padding-right: 7px;
   gap: 12px;
 }
-.Main .rectangle201 .frame94 .insight .frame32 {
+.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.Main .rectangle201 .frame94 .insight .frame32 .element-inisht {
+.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 .element-inisht {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
-.Main .rectangle201 .frame94 .frame93 {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 {
   width: 100%;
   max-height: 100%;
   background-color: #F6F6F6;
   padding: 21.5px 27px;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 h3 {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 h3 {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 {
   display: flex;
   flex-direction: column;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 input {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 input {
   width: 100%;
   padding: 15px 16px;
   border: 1px solid #ededed;
   border-radius: 3px;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::-moz-placeholder {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::-moz-placeholder {
   color: #B1B1B1;
   font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::placeholder {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::placeholder {
   color: #B1B1B1;
   font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox {
   display: flex;
   flex-wrap: nowrap;
   font-family: "OpenSans";
   font-size: 12px;
   color: #B1B1B1;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox input[type=checkbox] {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox input[type=checkbox] {
   margin-right: 6px;
   width: 30px;
   height: auto;
   color: #B1B1B1;
   outline: none;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p {
   font-family: "OpenSans";
   font-size: 12px;
   font-weight: 400;
   line-height: 16.34px;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p span {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p span {
   font-weight: 700;
 }
-.Main .rectangle201 .frame94 .frame93 form .frame37 button {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 button {
   width: 100%;
   padding: 15px 16px;
   background-color: #F5333F;
@@ -346,21 +404,19 @@ header .menu-header .frame39 .frame86 button a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 1024px) {
-  .Main .rectangle201 {
-    background-color: transparent;
-    min-height: 50px;
+  .Main .rectangle158 .rectangle201 {
+    background-color: white;
+    min-height: 0px;
     position: relative;
   }
-  .Main .rectangle201 .frame94 {
+  .Main .rectangle158 .rectangle201 .frame94 {
     display: flex;
     flex-direction: column;
     width: 20%;
-    min-width: 20%;
-    max-width: 30%;
+    min-width: 427px;
+    max-width: 427px;
     height: auto;
-    position: absolute;
-    right: 20%;
-    bottom: 50%;
+    position: relative;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 }
