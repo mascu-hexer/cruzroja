@@ -106,6 +106,10 @@ header .menu-header .frame39 {
   flex-direction: column;
   align-self: center;
 }
+header .menu-header .frame39 img {
+  width: 100%;
+  min-width: 333px;
+}
 header .menu-header .frame39 .frame86 {
   display: flex;
   flex-direction: row;
@@ -121,7 +125,7 @@ header .menu-header .frame39 .frame86 p {
   text-align: right;
 }
 header .menu-header .frame39 .frame86 button {
-  max-width: 121px;
+  min-width: 121px;
   max-height: 40px;
   padding: 10px;
   border: 1px solid #F5333F;
@@ -136,8 +140,24 @@ header .menu-header .frame39 .frame86 button a {
   text-decoration: none;
 }
 @media (min-width: 1024px) {
-  header .menu-header {
+  header .menu-header .frame39 {
     flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  header .menu-header .frame39 img {
+    width: 100%;
+    max-width: 490px;
+  }
+  header .menu-header .frame39 .frame86 {
+    display: flex;
+    align-items: center;
+  }
+  header .menu-header .frame39 .frame86 p {
+    width: 542px;
+    max-width: 100%;
   }
 }
 header .hamburger-menu {
@@ -232,7 +252,6 @@ header .hamburger-menu .nav-bar li a {
 .Main .rectangle158 picture {
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,7 +269,7 @@ header .hamburger-menu .nav-bar li a {
   background-color: white;
   position: relative;
   justify-self: center;
-  max-width: 600px;
+  max-width: 470px;
   max-height: 100%;
   z-index: 2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -280,6 +299,7 @@ header .hamburger-menu .nav-bar li a {
   line-height: 25.42px;
 }
 .Main .rectangle158 picture .frame94 .insight {
+  background-color: white;
   padding: 14.5px 12px 14.5px 7px;
   gap: 12px;
 }
@@ -397,6 +417,11 @@ header .hamburger-menu .nav-bar li a {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .Main .rectangle158 picture .frame94 {
+    max-width: 80%;
+  }
+}
 @media (min-width: 1024px) {
   .Main .rectangle158 {
     flex-direction: row;
@@ -406,6 +431,7 @@ header .hamburger-menu .nav-bar li a {
   .Main .rectangle158 picture {
     flex: 1;
     width: 100%;
+    max-width: 1900px;
     height: 100%;
     position: relative;
   }
@@ -425,11 +451,40 @@ header .hamburger-menu .nav-bar li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 427px;
+    transform: translate(35%, -46%);
+    width: 426px;
     max-width: 100%;
     height: auto;
     margin: 0;
+  }
+  .Main .rectangle158 picture .frame94 .titular {
+    padding: 30.5px 31px;
+  }
+  .Main .rectangle158 picture .frame94 .titular .frame33 {
+    padding: 0;
+  }
+  .Main .rectangle158 picture .frame94 .titular .frame33 p {
+    font-size: 35px;
+    line-height: 37.07px;
+    text-align: center;
+  }
+  .Main .rectangle158 picture .frame94 .titular .frame33 span {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 33.89px;
+    text-align: center;
+  }
+  .Main .rectangle158 picture .frame94 .insight {
+    padding: 23.5px 35px 23.5px 30px;
+  }
+  .Main .rectangle158 picture .frame94 .insight .frame32 .element-inisht p {
+    font-family: "OpenSans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+  }
+  .Main .rectangle158 picture .frame94 .frame93 {
+    padding: 18.5px 51.5px;
   }
 }
 .Main .frame96 .frame61 {
@@ -510,7 +565,7 @@ header .hamburger-menu .nav-bar li a {
   .Main .frame96 .frame61 {
     width: 100%;
     display: flex;
-    padding: 35px 10px 20px 10px;
+    padding: 56.13px 10px 20px 10px;
     flex-direction: column;
     align-items: center;
   }
@@ -837,7 +892,7 @@ header .hamburger-menu .nav-bar li a {
   .Main .frame92 .frame84 .frame56::after {
     content: "";
     display: block;
-    max-width: 470px;
+    min-width: 470px;
   }
   .Main .frame92 .frame84 .frame83 {
     box-sizing: border-box;
