@@ -250,9 +250,7 @@ header{
         .tirilla-footer .aviso-legal .hidden-text{
             display: block;
         }
-        
-        
-
+                
         .hamburger-menu{
             display: flex;
             width: 100%;
@@ -269,13 +267,33 @@ header{
                     list-style: none;
                     
                     a{
+                        position: relative;
                         text-decoration: none;
                         color: $corporative-blue;                    
                         font-family: "Montserrat";
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 600;
                         line-height: 21.94px;
                         cursor: pointer;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -10px; // Posiciona la línea en la parte superior del enlace
+                            left: 0;
+                            width: 0; // Comienza con un ancho de 0
+                            height: 2px; // Altura de la línea
+                            background-color: $corporative-red; // Color de la línea
+                            transition: width 0.5s ease; // Transición suave
+                        }
+                    
+                        &:hover::before {
+                            width: 100%; // Ancho completo del enlace al hacer hover
+                        }
+
+                        &:hover{
+                            color: $corporative-red;
+                        }
                     }
                 }
             }

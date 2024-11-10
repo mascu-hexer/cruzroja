@@ -225,13 +225,30 @@ header .hamburger-menu .nav-bar li a {
     list-style: none;
   }
   header .hamburger-menu .nav-bar li a {
+    position: relative;
     text-decoration: none;
     color: #011E41;
     font-family: "Montserrat";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 21.94px;
     cursor: pointer;
+  }
+  header .hamburger-menu .nav-bar li a::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F5333F;
+    transition: width 0.5s ease;
+  }
+  header .hamburger-menu .nav-bar li a:hover::before {
+    width: 100%;
+  }
+  header .hamburger-menu .nav-bar li a:hover {
+    color: #F5333F;
   }
 }
 
