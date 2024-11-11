@@ -199,35 +199,102 @@ header{
         }
     }
 
-    .hamburger-menu{
-        display: none;
-        flex-wrap: wrap;
+    .menu-bar {
+        display: flex;
+        justify-content: right; 
         width: 100%;
         padding-bottom: 20px;
-        .nav-bar{
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
+        position: relative;
+    
+        .burger-menu {
             display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+            gap: 10px;
+            cursor: pointer;
+            z-index: 10;
+    
+            p {
+                color: $corporative-blue;
+                font-family: "Montserrat";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 21.94px;
+            }
+    
+        }
+    
+        
+        .nav-bar {
+            display: none; 
             flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: right;
-            gap: 5px;
-            li{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            padding: 20px;
+            opacity: 0; // Invisible inicialmente
+            transform: translateY(-100%); // Comienza fuera de la vista
+            transition: transform 0.5s ease, opacity 0.5s ease; // Suave entrada de deslizamiento
+            z-index: 3;
+
+            li {
                 list-style: none;
-                
-                a{
+                text-align: left;
+                line-height: 50px;
+    
+                a {
                     text-decoration: none;
-                    color: $corporative-blue;                    
+                    color: $corporative-blue;
                     font-family: "Montserrat";
                     font-size: 16px;
-                    font-weight: 400;
+                    font-weight: 600;
                     line-height: 21.94px;
                     cursor: pointer;
+                    position: relative;
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -10px;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: $corporative-red;
+                        transition: width 0.5s ease;
+                    }
+    
+                    &:hover::before {
+                        width: 100%;
+                    }
+    
+                    &:hover {
+                        color: $corporative-red;
+                    }
+                }
+            }
+        }
+    
+        .nav-bar.show {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0); 
+
+            li{
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 0.3px;
+                    background-color: #b1b1b13b;
                 }
             }
         }
     }
+    
+    
 
     @media (min-width: $laptop){
         .carrier{
@@ -251,20 +318,29 @@ header{
             display: block;
         }
                 
-        .hamburger-menu{
+        .menu-bar{
             display: flex;
             width: 100%;
             padding-bottom: 20px;
+
+            .burger-menu{
+                display: none;
+            }
+
             .nav-bar{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                max-width: 1200px;
+                max-width: 100%;
                 margin: 0 auto;
                 justify-content: center;
                 gap: 50px;
+                position: static;
+                transform: translateY(0%);
+                opacity:1;
                 li{
                     list-style: none;
+                    line-height: 21px;
                     
                     a{
                         position: relative;
@@ -296,6 +372,20 @@ header{
                         }
                     }
                 }
+            }
+
+            .nav-bar.show {
+                display: flex;
+                opacity: 1;
+                transform: translateY(0); // El menú se desliza hacia abajo
+                li{
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+            img{
+                display: none;
             }
         }
     }
