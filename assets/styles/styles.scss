@@ -307,38 +307,31 @@ header{
     flex-wrap: wrap;
 
     .rectangle158 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         position: relative;
-        width: 100%;
-        height: 100%;
-
+        overflow: hidden;
+     
         picture {
+            position: relative;
+            display: block;
             width: 100%;
-            height: auto; 
-            //overflow: hidden;
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-            justify-content: center;
+            height: auto;
 
-            img {
+            img, source{
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
+                height: auto;
+                display: block;
             }
 
+        }
+
+        .rectangle201 {
+            position: relative;
+            background-color: $corporative-blue;
+            padding: 20px 20px 47px 20px;
+
             .frame94 {
-                width: calc(100% - 40px);
-                margin-top: -27px;
+                margin-top: -47px;
                 background-color: white;
-                position: relative;
-                justify-self: center;
-                max-width: 470px;
-                max-height: 100%;
-                z-index: 2;
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
                 .titular {
@@ -485,61 +478,68 @@ header{
             }
         }
 
-        .rectangle201 {
-            display: flex;
-            background-color: $corporative-blue;
-            width: 100%;
-            min-height: 720px;
-            padding: 20px 0 47px;
-            margin-top: calc(-720px + 19px);
-            justify-content: center;
-            position: relative;
-            z-index: -1;
+        @media(min-width: $tablet){
+            overflow: hidden;
 
-            @media (min-width: $laptop) {
-                display: none;
+            .rectangle201{
+                display: flex;
+                justify-content: center;
+                max-width: 100%;
+                //margin: 0 auto;
+                
+                .frame94{
+                    display: flex;
+                    flex-direction: column;
+                    max-width: fit-content;
+                }
             }
         }
 
-        @media (min-width: $tablet){
-            picture .frame94{
-                max-width: calc(100% - 20%);
-            }
-        }
-
-        @media (min-width: $laptop) {
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+        @media(min-width: $laptop) {
+            //overflow: hidden;
+            margin-bottom: 40px;
+            overflow: visible;
 
             picture {
-                flex: 1;
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
                 width: 100%;
-                max-width: 1900px;
                 height: 100%;
-                position: relative; 
+                text-align: center;
 
-                source {
-                    width: 100%;
-                    height: 140%;
-                    object-fit: cover;
-                }
-
-                img {
+                img, source{
+                    display: block;
+                    position: absolute;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
+            
+            }
 
+            .rectangle201 {
+                position: relative;
+                padding: 0;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-right: max(0px, (50% - 600px));
+                    
                 .frame94 {
-                    position: absolute; 
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(35%, -46%);
-                    width: 426px;
+                    position: relative;
+                    width: 427px;
                     max-width: 100%;
-                    height: auto;
+                    min-height: 774px;
                     margin: 0;
+                    //margin-top: 60px;
+                    transform: translateY(40px);
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                    //z-index: 1;                    
+
                     .titular{
                         padding: 30.5px 31px;
 
@@ -578,7 +578,6 @@ header{
             }
         }
     }
-
 
     .frame96{
         //padding: 40px 32.5px;
