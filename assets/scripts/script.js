@@ -26,4 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         closeIcon.style.display = 'none';
         burgerIcon.style.display = 'block';
     });
+
+
 });
