@@ -1075,45 +1075,64 @@ header .menu-bar .nav-bar.show li::after {
   margin-top: 15px;
   margin-bottom: 0px;
 }
-.Main .frame85 .frame55 {
+.Main .frame85 .wrap-swiper {
   display: flex;
-  flex-direction: column;
-  padding: 62px 20px 62px 20px;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  padding: 62px 20px 88px 20px;
   gap: 10px;
   margin-bottom: 13px;
   background-color: #FAFAFA;
 }
-.Main .frame85 .frame55 .frame54 {
+.Main .frame85 .wrap-swiper .swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.Main .frame85 .frame55 .frame54 .frame98 p {
+.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 p {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
   line-height: 27.12px;
   color: #F5333F;
 }
-.Main .frame85 .frame55 .frame54 .frame98 ul {
+.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
 }
-.Main .frame85 .frame55 .frame54 .frame98 ul img {
+.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 ul img {
   width: 24px;
   height: auto;
 }
-.Main .frame85 .frame55 .frame54 p {
+.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide p {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 18px;
   line-height: 27.12px;
   color: #323232;
 }
-.Main .frame85 .frame55 .pasador-slider {
-  align-self: center;
+.Main .frame85 .wrap-swiper .swiper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.Main .frame85 .wrap-swiper .swiper .swiper-pagination-bullet-active {
+  background-color: black;
+}
+.Main .frame85 .wrap-swiper .swiper .swiper-button-next, .Main .frame85 .wrap-swiper .swiper .swiper-button-prev {
+  display: none;
 }
 @media (min-width: 1024px) {
   .Main .frame85 {
@@ -1138,16 +1157,33 @@ header .menu-bar .nav-bar.show li::after {
     display: block;
     min-width: 470px;
   }
-  .Main .frame85 .frame55 {
+  .Main .frame85 .wrap-swiper {
     width: 100%;
     max-width: 1200px;
-    padding: 61px 0px;
+    padding: 61px 106px;
     margin-bottom: 31.04px;
   }
-  .Main .frame85 .frame55 .frame54 {
-    max-width: 83%;
+  .Main .frame85 .wrap-swiper .swiper .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    max-width: 840px;
     margin: 0 auto;
     gap: 10px;
+  }
+  .Main .frame85 .wrap-swiper .swiper-pagination {
+    display: none;
+  }
+  .Main .frame85 .wrap-swiper .swiper-button-next, .Main .frame85 .wrap-swiper .swiper-button-prev {
+    display: flex;
+    font-size: 32px;
+    color: #323232;
+    cursor: pointer;
   }
 }
 .Main .frame45 {

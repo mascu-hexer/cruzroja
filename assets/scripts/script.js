@@ -51,16 +51,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    new Swiper('.testimonial-slider', {
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 11,
         loop: true,
+        // autoplay: {
+        //     delay: 10000
+        // },
+        
+        // If we need pagination
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '"></span>';
-            },
+          el: '.swiper-pagination',
         },
-    });
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }      
+      });
 });

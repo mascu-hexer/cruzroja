@@ -1319,16 +1319,16 @@ header{
         }
     }
 
-    .frame85{
+    .frame85 {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         max-width: 1200px;
         width: 100%;
         padding: 0;
-        margin:0 auto;
+        margin: 0 auto;
         gap: 20px;
-
+    
         .frame56 {
             font-family: "Montserrat";
             font-size: 20px;
@@ -1336,15 +1336,14 @@ header{
             line-height: 33.1px;
             padding: 0px 50px;
             padding-bottom: 0px;
-            //margin-bottom: 20px;
             text-align: center;
             color: $corporative-blue;
-
-            p{
+    
+            p {
                 max-width: 80%;
                 justify-self: center;
             }
-
+    
             &::after {
                 content: "";
                 display: block;
@@ -1355,95 +1354,145 @@ header{
                 margin-top: 15px;
                 margin-bottom: 0px;
             }
-
         }
-
-        .frame55{
+    
+        .wrap-swiper{
             display: flex;
-            flex-direction: column;
-            padding: 62px 20px 62px 20px;
+            width: 100%;
+            height: 100%;
+            flex-direction: row;
+            padding: 62px 20px 88px 20px;
             gap: 10px;
             margin-bottom: 13px;
             background-color: #FAFAFA;
 
-            .frame54{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                .frame98{
-                    p{
-                       font-family: "Montserrat";
-                       font-size: 18px;
-                       font-weight: 600;
-                       line-height: 27.12px;
-                       color: $corporative-red;
-                    }
-                    ul{
+            .swiper {
+        
+                .swiper-wrapper {
+                    display: flex;
+                    flex-direction: row;
+        
+                    .swiper-slide {
                         display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        list-style: none;
-
-                        img{
-                            width: 24px;
-                            height: auto;
+                        flex-direction: column;
+                        max-width: 100%;
+                        margin: 0 auto;
+        
+                        .frame98 {
+                            p {
+                                font-family: "Montserrat";
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: 27.12px;
+                                color: $corporative-red;
+                            }
+        
+                            ul {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                list-style: none;
+        
+                                img {
+                                    width: 24px;
+                                    height: auto;
+                                }
+                            }
+                        }
+        
+                        p {
+                            font-family: "OpenSans";
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 27.12px;
+                            color: $corporative-text;
                         }
                     }
                 }
+        
+                .swiper-pagination-bullet {
+                    width: 13px;
+                    height: 13px;
+                    display: inline-block;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .swiper-pagination-bullet-active {
+                    background-color: black;
+                }
 
-                p{
-                    font-family: "OpenSans";
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 27.12px;
-                    color: $corporative-text;
+                .swiper-button-next, .swiper-button-prev {
+                    display: none;
                 }
             }
-
-            .pasador-slider{
-                align-self: center;
-            }
         }
-
-        @media (min-width: $laptop){            
+    
+        @media (min-width: $laptop) {
             display: flex;
             flex-direction: column;
             max-width: 1200px;
             width: 100%;
             margin-bottom: 57.13px;
-
-            .frame56{
+    
+            .frame56 {
                 max-width: 100%;
                 width: 100%;
                 align-self: center;
-
-                p{
+    
+                p {
                     font-size: 25px;
                     font-weight: 600;
                     line-height: 1.22rem;
                 }
-
+    
                 &::after {
                     content: "";
                     display: block;
                     min-width: 470px;
                 }
             }
-
-            .frame55{
+    
+            .wrap-swiper {
                 width: 100%;
                 max-width: 1200px;
-                padding: 61px 0px;
+                padding: 61px 106px;
                 margin-bottom: 31.04px;
 
-                .frame54{
-                    max-width: 83%;
-                    margin: 0 auto;
-                    gap: 10px;
+                .swiper{                
+    
+                .swiper-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    //gap: 10px;
+                    justify-content: center;
+                    overflow: hidden;
+                    
+                    .swiper-slide {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 840px;
+                        margin: 0 auto;
+                        gap: 10px;
+                    }
+
+                    
+                }
+            }
+
+                .swiper-pagination{
+                    display: none;
                 }
 
-            }            
+                .swiper-button-next, .swiper-button-prev{
+                    display: flex;
+                    font-size: 32px;
+                    color: $corporative-text;
+                    cursor: pointer;
+                }
+            }
         }
     }
     

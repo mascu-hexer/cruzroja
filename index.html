@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" href="../cruzroja/assets/images/Logo-Hospital-Cruz-Roja-de-Cordoba-footer.svg">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/styles.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
 
 </head>
 <body>
@@ -346,46 +346,52 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="frame85">
-            <div class="frame56">                
-                <p>Nuestros éxitos hablan por nosotros</p>                
-            </div>
-            <div class="frame55">
-                <div class="frame54">
-                    <div class="frame98">
-                        <p>P. Martínez</p>
-                        <ul>
-                            <li><img src="assets/images/Star.png" alt="Star"></li>
-                            <li><img src="assets/images/Star.png" alt="Star"></li>
-                            <li><img src="assets/images/Star.png" alt="Star"></li>
-                            <li><img src="assets/images/Star.png" alt="Star"></li>
-                            <li><img src="assets/images/Star.png" alt="Star"></li>
-                        </ul>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id nulla eu libero laoreet 
-                        eleifend vestibulum id metus. Pellentesque malesuada condimentum vulputate. Proin eleifend 
-                        augue sed urna placerat vulputate. Interdum et malesuada fames ac ante ipsum primis in 
-                        faucibus. Nullam interdum efficitur tortor, nec vehicula tellus dapibus eu.
-                    </p>
-                </div>
-                <div class="pasador-slider">
-                    <img src="assets/images/pasador-slider.png" alt="pasador slider">
-                </div>
-            </div>
-        </div> -->
-
+        
         <div class="frame85">
             <div class="frame56">                
                 <p>Nuestros éxitos hablan por nosotros</p>                
-            </div>
-            <div class="frame55">
-                <div class="swiper valoraciones-slider">
+            </div> 
+            <div class="wrap-swiper">           
+                <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide frame54" id="review_1">
+                        <div class="swiper-slide" id="slide1">
                             <div class="frame98">
                                 <p>P. Martínez</p>
+                                <ul class="stars">
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id nulla eu libero laoreet 
+                                eleifend vestibulum id metus. Pellentesque malesuada condimentum vulputate. Proin eleifend augue 
+                                sed urna placerat vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                Nullam interdum efficitur tortor, nec vehicula tellus dapibus eu.
+                            </p>
+                        </div>
+                        <div class="swiper-slide" id="slide2">
+                            <div class="frame98">
+                                <p>L. García</p>
+                                <ul class="stars">
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                    <li><img src="assets/images/Star.png" alt="Star"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id nulla eu libero laoreet 
+                                eleifend vestibulum id metus. Pellentesque malesuada condimentum vulputate. Proin eleifend 
+                                augue sed urna placerat vulputate. Interdum et malesuada fames ac ante ipsum primis in 
+                                faucibus. Nullam interdum efficitur tortor, nec vehicula.
+                            </p>
+                        </div>
+                        <div class="swiper-slide" id="slide3">
+                            <div class="frame98">
+                                <p>A. López</p>
                                 <ul class="stars">
                                     <li><img src="assets/images/Star.png" alt="Star"></li>
                                     <li><img src="assets/images/Star.png" alt="Star"></li>
@@ -401,38 +407,9 @@
                                 faucibus. Nullam interdum efficitur tortor, nec vehicula.
                             </p>
                         </div>
-                        <div class="swiper-slide frame54" id="review_2">
-                            <div class="frame98">
-                                <p>L. García</p>
-                                <ul class="stars">
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                </ul>
-                            </div>
-                            <p>
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                        <div class="swiper-slide frame54" id="review_3">
-                            <div class="frame98">
-                                <p>A. López</p>
-                                <ul class="stars">
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                    <li><img src="assets/images/Star.png" alt="Star"></li>
-                                </ul>
-                            </div>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
