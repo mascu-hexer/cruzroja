@@ -58,6 +58,111 @@ body {
     min-width: $mobile_m;
 }
 
+.acordeon {
+    background-color: white;
+
+    label {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px 10px 25px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        border: 1px solid #EDEDED;
+        transition: all 300ms ease;
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21.94px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            transition: transform 300ms ease;
+        }
+
+        &:hover {
+            background-color: #F5333F1A;
+        }
+    }
+
+    .contenido-acordeon {
+        display: flex;
+        padding: 0px;
+        max-height: 0px; 
+        overflow: hidden;
+        opacity: 0; 
+        transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-family: "OpenSans";
+            font-size: 18px;
+            line-height: 27.12px;
+            color: $corporative-text;
+            max-width: 840px;
+            padding-bottom: 35px;
+        }
+    }
+
+    input[type="checkbox"]:checked + label + .contenido-acordeon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: max-content; 
+        padding: 15px 0px;
+        opacity: 1;
+    }
+
+    input[type="checkbox"]:checked + label img {
+        transform: rotate(180deg);
+    }
+
+    input[type="checkbox"]:checked + label {
+        border: none;
+    }
+
+    .btn-acordeon {
+        display: none;
+    }
+
+    @media (min-width: $laptop){
+        .acordeon {
+            label {
+                max-height: 69px;
+                padding: 18.5px 36px 18.5px 51px;
+
+                p {
+                    padding: 0px;
+                }
+
+                img {
+                    margin-right: 38px;
+                }
+            }
+
+            .contenido-acordeon {
+                margin: 0 auto;
+                max-width: 840px;
+                justify-content: center;
+                opacity: 0;
+                transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
+                max-height: 0;
+            }
+
+            input[type="checkbox"]:checked + label + .contenido-acordeon {
+                padding: 25px 0px 35px 0px;
+                max-height: 200px; 
+                opacity: 1;
+            }
+        }
+    }
+}
+
 header{
     background-color: #FFFFFF;
     min-width: 375px;
@@ -174,22 +279,19 @@ header{
                     text-align: right;
                 }
 
-                button{
+                a button{
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 21.94px;
+                    color: $corporative-red;
+                    text-decoration: none;
                     min-width: 121px;
                     max-height: 40px;
                     padding: 10px;
                     border: 1px solid $corporative-red;
                     gap: 10px;
                     background-color: #FFFFFF;
-
-                    a{
-                        font-size: 18px;
-                        font-weight: 700;
-                        line-height: 21.94px;
-                        color: $corporative-red;
-                        text-decoration: none;
-                    }
-
+                    cursor: pointer;
                 }
             }
         }
@@ -417,6 +519,8 @@ header{
     }
 }
 
+
+
 .Main{
     display: flex;
     flex-direction: column;
@@ -575,7 +679,7 @@ header{
                             }
                         }
 
-                        button {
+                        a button {
                             width: 100%;
                             padding: 15px 16px;
                             background-color: $corporative-red;
@@ -588,6 +692,7 @@ header{
                             border-radius: 3px;
                             margin-top: 20px;
                             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                            cursor: pointer;
                         }
                     }
                 }
@@ -820,7 +925,7 @@ header{
     .seo2 {
         display: flex;
         flex-direction: column;
-        padding: 8px 20px;
+        padding: 8px 32.5px;
         text-align: center;
     
         .main-container {
@@ -835,46 +940,59 @@ header{
                 line-height: 24.38px;
                 color: $corporative-blue;
             }
-    
-            .frame91 {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                padding: 0px 17px;
-                width: 100%;
-    
-                &::before,
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $corporative-red;
-                    margin: 15px 0;
-                }
-    
-                img {
-                    max-width: 32px;
-                    max-height: 32px;
-                    width: 100%;
+
+            .acordeon{
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    border: none;
+                    
+                    .frame91 {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0px 17px;
+                        width: 100%;
+            
+                        &::before,
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            background-color: $corporative-red;
+                            margin: 15px 0;
+                        }
+            
+                        img {
+                            max-width: 32px;
+                            max-height: 32px;
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: white;
+                    }
                 }
             }
+
+            .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+                padding: 20px 0px;
+            }
+    
         }
-        @media (min-width: $laptop){            
-            display: flex;
-            width:100%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 66.15px;
-            
-            .main-container{
-                max-width: 1200px;
-                align-items: center;
-                h3{
-                    font-size: 30px;
+        @media (min-width: $laptop){               
+            .main-container .acordeon label{
+                .frame91{
+                    max-width: 302px;
                 }
-            }            
+
+                &:hover{
+                    background-color: white;  
+                }            
+            }
         }
     }
 
@@ -997,22 +1115,22 @@ header{
                 color: white;
             }
 
-            button{
-                background-color: #FFFFFF;
-                width: 100%;
-                max-width: 133px;
-                padding: 10px;
-                gap: 10px;
-                border: none;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-
-                a{
+            a{                
+                button{
                     font-family: "Montserrat", sans-serif;
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 1.22rem;
                     text-decoration: none;
-                    color: black;                    
+                    color: black;       
+                    background-color: #FFFFFF;
+                    width: 100%;
+                    max-width: 133px;
+                    padding: 10px;
+                    gap: 10px;
+                    border: none;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);   
+                    cursor: pointer;
                 }
             }
         }
@@ -1069,72 +1187,72 @@ header{
                 flex-direction: column;
                 gap: 10px;
     
-                .acordeon {
-                    background-color: white;
+                // .acordeon {
+                //     background-color: white;
     
-                    label {
-                        display: flex;
-                        flex-direction: row;
-                        padding: 10px 10px 10px 25px;
-                        align-items: center;
-                        justify-content: space-between;
-                        cursor: pointer;
-                        border: 1px solid #EDEDED;
-                        transition: all 300ms ease;
+                //     label {
+                //         display: flex;
+                //         flex-direction: row;
+                //         padding: 10px 10px 10px 25px;
+                //         align-items: center;
+                //         justify-content: space-between;
+                //         cursor: pointer;
+                //         border: 1px solid #EDEDED;
+                //         transition: all 300ms ease;
     
-                        p {
-                            font-size: 18px;
-                            font-weight: 600;
-                            line-height: 21.94px;
-                        }
+                //         p {
+                //             font-size: 18px;
+                //             font-weight: 600;
+                //             line-height: 21.94px;
+                //         }
     
-                        img {
-                            width: 32px;
-                            height: 32px;
-                            transition: transform 300ms ease;
-                        }
+                //         img {
+                //             width: 32px;
+                //             height: 32px;
+                //             transition: transform 300ms ease;
+                //         }
     
-                        &:hover {
-                            background-color: #F5333F1A;
-                        }
-                    }
+                //         &:hover {
+                //             background-color: #F5333F1A;
+                //         }
+                //     }
     
-                    .contenido-acordeon {
-                        padding: 0px;
-                        //margin: 0px 20px;
-                        max-height: 0px; 
-                        overflow: hidden;
-                        opacity: 0; 
-                        transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
+                //     .contenido-acordeon {
+                //         padding: 0px;
+                //         //margin: 0px 20px;
+                //         max-height: 0px; 
+                //         overflow: hidden;
+                //         opacity: 0; 
+                //         transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
     
-                        p {
-                            font-family: "OpenSans";
-                            font-size: 18px;
-                            line-height: 27.12px;
-                            color: $corporative-text;
-                            max-width: 840px;
-                            padding-bottom: 35px;
-                        }
-                    }
+                //         p {
+                //             font-family: "OpenSans";
+                //             font-size: 18px;
+                //             line-height: 27.12px;
+                //             color: $corporative-text;
+                //             max-width: 840px;
+                //             padding-bottom: 35px;
+                //         }
+                //     }
     
-                    input[type="checkbox"]:checked + label + .contenido-acordeon {
-                        max-height: max-content; 
-                        padding: 15px 0px;
-                        opacity: 1;
-                    }
+                //     input[type="checkbox"]:checked + label + .contenido-acordeon {
+                //         max-height: max-content; 
+                //         padding: 15px 0px;
+                //         opacity: 1;
+                //     }
     
-                    input[type="checkbox"]:checked + label img {
-                        transform: rotate(180deg);
-                    }
+                //     input[type="checkbox"]:checked + label img {
+                //         transform: rotate(180deg);
+                //     }
     
-                    input[type="checkbox"]:checked + label {
-                        border: none;
-                    }
+                //     input[type="checkbox"]:checked + label {
+                //         border: none;
+                //     }
     
-                    .btn-acordeon {
-                        display: none;
-                    }
-                }
+                //     .btn-acordeon {
+                //         display: none;
+                //     }
+                // }
             }
         }
         @media (min-width: $laptop) {            
@@ -1167,35 +1285,35 @@ header{
                     max-width: 100%;
                     height: auto;
     
-                    .acordeon {
-                        label {
-                            max-height: 69px;
-                            padding: 18.5px 36px 18.5px 51px;
+                    // .acordeon {
+                    //     label {
+                    //         max-height: 69px;
+                    //         padding: 18.5px 36px 18.5px 51px;
 
-                            p {
-                                padding: 0px;
-                            }
+                    //         p {
+                    //             padding: 0px;
+                    //         }
     
-                            img {
-                                margin-right: 38px;
-                            }
-                        }
+                    //         img {
+                    //             margin-right: 38px;
+                    //         }
+                    //     }
     
-                        .contenido-acordeon {
-                            margin: 0 auto;
-                            max-width: 840px;
-                            justify-content: center;
-                            opacity: 0;
-                            transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
-                            max-height: 0;
-                        }
+                    //     .contenido-acordeon {
+                    //         margin: 0 auto;
+                    //         max-width: 840px;
+                    //         justify-content: center;
+                    //         opacity: 0;
+                    //         transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
+                    //         max-height: 0;
+                    //     }
     
-                        input[type="checkbox"]:checked + label + .contenido-acordeon {
-                            padding: 25px 0px 35px 0px;
-                            max-height: 200px; 
-                            opacity: 1;
-                        }
-                    }
+                    //     input[type="checkbox"]:checked + label + .contenido-acordeon {
+                    //         padding: 25px 0px 35px 0px;
+                    //         max-height: 200px; 
+                    //         opacity: 1;
+                    //     }
+                    // }
                 }
             }            
         }
@@ -1328,7 +1446,7 @@ header{
             }            
         }
     }
-
+    
     .frame45 {
         width: 100%;
         height: 100%;

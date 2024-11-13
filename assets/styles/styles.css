@@ -39,6 +39,95 @@ body {
   min-width: 375px;
 }
 
+.acordeon {
+  background-color: white;
+}
+.acordeon label {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 10px 25px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid #EDEDED;
+  transition: all 300ms ease;
+}
+.acordeon label p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+}
+.acordeon label img {
+  width: 32px;
+  height: 32px;
+  transition: transform 300ms ease;
+}
+.acordeon label:hover {
+  background-color: rgba(245, 51, 63, 0.1019607843);
+}
+.acordeon .contenido-acordeon {
+  display: flex;
+  padding: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
+  text-align: justify;
+  flex-direction: column;
+  align-items: center;
+}
+.acordeon .contenido-acordeon p {
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 27.12px;
+  color: #323232;
+  max-width: 840px;
+  padding-bottom: 35px;
+}
+.acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  padding: 15px 0px;
+  opacity: 1;
+}
+.acordeon input[type=checkbox]:checked + label img {
+  transform: rotate(180deg);
+}
+.acordeon input[type=checkbox]:checked + label {
+  border: none;
+}
+.acordeon .btn-acordeon {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .acordeon .acordeon label {
+    max-height: 69px;
+    padding: 18.5px 36px 18.5px 51px;
+  }
+  .acordeon .acordeon label p {
+    padding: 0px;
+  }
+  .acordeon .acordeon label img {
+    margin-right: 38px;
+  }
+  .acordeon .acordeon .contenido-acordeon {
+    margin: 0 auto;
+    max-width: 840px;
+    justify-content: center;
+    opacity: 0;
+    transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
+    max-height: 0;
+  }
+  .acordeon .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+    padding: 25px 0px 35px 0px;
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
 header {
   background-color: #FFFFFF;
   min-width: 375px;
@@ -146,20 +235,19 @@ header .menu-header .frame39 .frame86 p {
   line-height: 21.94px;
   text-align: right;
 }
-header .menu-header .frame39 .frame86 button {
+header .menu-header .frame39 .frame86 a button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.94px;
+  color: #F5333F;
+  text-decoration: none;
   min-width: 121px;
   max-height: 40px;
   padding: 10px;
   border: 1px solid #F5333F;
   gap: 10px;
   background-color: #FFFFFF;
-}
-header .menu-header .frame39 .frame86 button a {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.94px;
-  color: #F5333F;
-  text-decoration: none;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   header .menu-header .frame39 {
@@ -492,7 +580,7 @@ header .menu-bar .nav-bar.show li::after {
 .Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p span {
   font-weight: 700;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 button {
+.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 a button {
   width: 100%;
   padding: 15px 16px;
   background-color: #F5333F;
@@ -505,6 +593,7 @@ header .menu-bar .nav-bar.show li::after {
   border-radius: 3px;
   margin-top: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .Main .rectangle158 {
@@ -698,7 +787,7 @@ header .menu-bar .nav-bar.show li::after {
 .Main .seo2 {
   display: flex;
   flex-direction: column;
-  padding: 8px 20px;
+  padding: 8px 32.5px;
   text-align: center;
 }
 .Main .seo2 .main-container {
@@ -713,14 +802,19 @@ header .menu-bar .nav-bar.show li::after {
   line-height: 24.38px;
   color: #011E41;
 }
-.Main .seo2 .main-container .frame91 {
+.Main .seo2 .main-container .acordeon label {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.Main .seo2 .main-container .acordeon label .frame91 {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px 17px;
   width: 100%;
 }
-.Main .seo2 .main-container .frame91::before, .Main .seo2 .main-container .frame91::after {
+.Main .seo2 .main-container .acordeon label .frame91::before, .Main .seo2 .main-container .acordeon label .frame91::after {
   content: "";
   display: block;
   width: 100%;
@@ -728,26 +822,23 @@ header .menu-bar .nav-bar.show li::after {
   background-color: #F5333F;
   margin: 15px 0;
 }
-.Main .seo2 .main-container .frame91 img {
+.Main .seo2 .main-container .acordeon label .frame91 img {
   max-width: 32px;
   max-height: 32px;
   width: 100%;
 }
+.Main .seo2 .main-container .acordeon label:hover {
+  background-color: white;
+}
+.Main .seo2 .main-container .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+  padding: 20px 0px;
+}
 @media (min-width: 1024px) {
-  .Main .seo2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 66.15px;
+  .Main .seo2 .main-container .acordeon label .frame91 {
+    max-width: 302px;
   }
-  .Main .seo2 .main-container {
-    max-width: 1200px;
-    align-items: center;
-  }
-  .Main .seo2 .main-container h3 {
-    font-size: 30px;
+  .Main .seo2 .main-container .acordeon label:hover {
+    background-color: white;
   }
 }
 .Main .frame97 {
@@ -858,7 +949,13 @@ header .menu-bar .nav-bar.show li::after {
   text-align: center;
   color: white;
 }
-.Main .frame43 .frame42 button {
+.Main .frame43 .frame42 a button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.22rem;
+  text-decoration: none;
+  color: black;
   background-color: #FFFFFF;
   width: 100%;
   max-width: 133px;
@@ -866,14 +963,7 @@ header .menu-bar .nav-bar.show li::after {
   gap: 10px;
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-.Main .frame43 .frame42 button a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.22rem;
-  text-decoration: none;
-  color: black;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .Main .frame43 .frame42 {
@@ -923,62 +1013,6 @@ header .menu-bar .nav-bar.show li::after {
   flex-direction: column;
   gap: 10px;
 }
-.Main .frame92 .frame84 .frame83 .acordeon {
-  background-color: white;
-}
-.Main .frame92 .frame84 .frame83 .acordeon label {
-  display: flex;
-  flex-direction: row;
-  padding: 10px 10px 10px 25px;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  border: 1px solid #EDEDED;
-  transition: all 300ms ease;
-}
-.Main .frame92 .frame84 .frame83 .acordeon label p {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.94px;
-}
-.Main .frame92 .frame84 .frame83 .acordeon label img {
-  width: 32px;
-  height: 32px;
-  transition: transform 300ms ease;
-}
-.Main .frame92 .frame84 .frame83 .acordeon label:hover {
-  background-color: rgba(245, 51, 63, 0.1019607843);
-}
-.Main .frame92 .frame84 .frame83 .acordeon .contenido-acordeon {
-  padding: 0px;
-  max-height: 0px;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
-}
-.Main .frame92 .frame84 .frame83 .acordeon .contenido-acordeon p {
-  font-family: "OpenSans";
-  font-size: 18px;
-  line-height: 27.12px;
-  color: #323232;
-  max-width: 840px;
-  padding-bottom: 35px;
-}
-.Main .frame92 .frame84 .frame83 .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
-  max-height: -moz-max-content;
-  max-height: max-content;
-  padding: 15px 0px;
-  opacity: 1;
-}
-.Main .frame92 .frame84 .frame83 .acordeon input[type=checkbox]:checked + label img {
-  transform: rotate(180deg);
-}
-.Main .frame92 .frame84 .frame83 .acordeon input[type=checkbox]:checked + label {
-  border: none;
-}
-.Main .frame92 .frame84 .frame83 .acordeon .btn-acordeon {
-  display: none;
-}
 @media (min-width: 1024px) {
   .Main .frame92 {
     margin: 0 auto;
@@ -1005,29 +1039,6 @@ header .menu-bar .nav-bar.show li::after {
     width: 100%;
     max-width: 100%;
     height: auto;
-  }
-  .Main .frame92 .frame84 .frame83 .acordeon label {
-    max-height: 69px;
-    padding: 18.5px 36px 18.5px 51px;
-  }
-  .Main .frame92 .frame84 .frame83 .acordeon label p {
-    padding: 0px;
-  }
-  .Main .frame92 .frame84 .frame83 .acordeon label img {
-    margin-right: 38px;
-  }
-  .Main .frame92 .frame84 .frame83 .acordeon .contenido-acordeon {
-    margin: 0 auto;
-    max-width: 840px;
-    justify-content: center;
-    opacity: 0;
-    transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
-    max-height: 0;
-  }
-  .Main .frame92 .frame84 .frame83 .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
-    padding: 25px 0px 35px 0px;
-    max-height: 200px;
-    opacity: 1;
   }
 }
 .Main .frame85 {

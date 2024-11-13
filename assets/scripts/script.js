@@ -50,4 +50,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    new Swiper('.testimonial-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+            },
+        },
+    });
 });
