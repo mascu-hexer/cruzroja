@@ -526,7 +526,7 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
 
-    .rectangle158 {
+    .section-formulario {
         position: relative;
         overflow: hidden;
      
@@ -1377,6 +1377,7 @@ header{
                         flex-direction: column;
                         max-width: 100%;
                         margin: 0 auto;
+                        gap: 10px;
         
                         .frame98 {
                             p {
@@ -1431,6 +1432,7 @@ header{
         }
     
         @media (min-width: $laptop) {
+            
             display: flex;
             flex-direction: column;
             max-width: 1200px;
@@ -1461,37 +1463,35 @@ header{
                 padding: 61px 106px;
                 margin-bottom: 31.04px;
 
-                .swiper{                
-    
-                .swiper-wrapper {
-                    display: flex;
-                    flex-direction: row;
-                    //gap: 10px;
-                    justify-content: center;
-                    overflow: hidden;
-                    
-                    .swiper-slide {
+                .swiper{     
+                    //overflow: hidden;           
+        
+                    .swiper-wrapper {
                         display: flex;
-                        flex-direction: column;
-                        max-width: 840px;
-                        margin: 0 auto;
-                        gap: 10px;
+                        flex-direction: row;
+                        justify-content: center;
+                        //overflow: hidden;
+                        
+                        .swiper-slide {
+                            display: flex;
+                            flex-direction: column;
+                            max-width: 840px;
+                            margin: 0 auto;
+                        }    
                     }
 
-                    
+                    .swiper-button-next, .swiper-button-prev{
+                        display: block;
+                        font-size: 32px;
+                        color: $corporative-text;
+                        cursor: pointer;
+                    }
                 }
-            }
-
                 .swiper-pagination{
                     display: none;
                 }
 
-                .swiper-button-next, .swiper-button-prev{
-                    display: flex;
-                    font-size: 32px;
-                    color: $corporative-text;
-                    cursor: pointer;
-                }
+
             }
         }
     }

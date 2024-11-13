@@ -442,42 +442,42 @@ header .menu-bar .nav-bar.show li::after {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.Main .rectangle158 {
+.Main .section-formulario {
   position: relative;
   overflow: hidden;
 }
-.Main .rectangle158 picture {
+.Main .section-formulario picture {
   position: relative;
   display: block;
   width: 100%;
   height: auto;
 }
-.Main .rectangle158 picture img, .Main .rectangle158 picture source {
+.Main .section-formulario picture img, .Main .section-formulario picture source {
   width: 100%;
   height: auto;
   display: block;
 }
-.Main .rectangle158 .rectangle201 {
+.Main .section-formulario .rectangle201 {
   position: relative;
   background-color: #011E41;
   padding: 20px 20px 47px 20px;
 }
-.Main .rectangle158 .rectangle201 .frame94 {
+.Main .section-formulario .rectangle201 .frame94 {
   margin-top: -47px;
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
-.Main .rectangle158 .rectangle201 .frame94 .titular {
+.Main .section-formulario .rectangle201 .frame94 .titular {
   padding: 8px;
   gap: 10px;
   background-color: #F5333F;
 }
-.Main .rectangle158 .rectangle201 .frame94 .titular .frame33 {
+.Main .section-formulario .rectangle201 .frame94 .titular .frame33 {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .titular .frame33 p {
+.Main .section-formulario .rectangle201 .frame94 .titular .frame33 p {
   font-size: 25px;
   font-weight: 800;
   text-transform: uppercase;
@@ -485,102 +485,102 @@ header .menu-bar .nav-bar.show li::after {
   line-height: 26.48px;
   color: #FFFFFF;
 }
-.Main .rectangle158 .rectangle201 .frame94 .titular .frame33 span {
+.Main .section-formulario .rectangle201 .frame94 .titular .frame33 span {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   line-height: 25.42px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .insight {
+.Main .section-formulario .rectangle201 .frame94 .insight {
   background-color: white;
   padding: 14.5px 12px 14.5px 7px;
   gap: 12px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 {
+.Main .section-formulario .rectangle201 .frame94 .insight .frame32 {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 .element-inisht {
+.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 .element-inisht .icon {
+.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht .icon {
   width: 32px;
   height: 32px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 .element-inisht .icon img {
+.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht .icon img {
   width: 32px;
   height: 32px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .insight .frame32 .element-inisht p {
+.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht p {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 16px;
   line-height: 21.79px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 {
+.Main .section-formulario .rectangle201 .frame94 .frame93 {
   width: 100%;
   max-height: 100%;
   background-color: #F6F6F6;
   padding: 21.5px 27px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 h3 {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 h3 {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 input {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 input {
   width: 100%;
   padding: 15px 16px;
   border: 1px solid #ededed;
   border-radius: 3px;
   max-height: 45px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::-moz-placeholder {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::-moz-placeholder {
   color: #B1B1B1;
   font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::placeholder {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::placeholder {
   color: #B1B1B1;
   font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox {
   display: flex;
   flex-wrap: nowrap;
   font-family: "OpenSans";
   font-size: 12px;
   color: #B1B1B1;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox input[type=checkbox] {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox input[type=checkbox] {
   margin-right: 6px;
   width: 30px;
   height: auto;
   color: #B1B1B1;
   outline: none;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p {
   font-family: "OpenSans";
   font-size: 12px;
   font-weight: 400;
   line-height: 16.34px;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p span {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p span {
   font-weight: 700;
 }
-.Main .rectangle158 .rectangle201 .frame94 .frame93 form .frame37 a button {
+.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 a button {
   width: 100%;
   padding: 15px 16px;
   background-color: #F5333F;
@@ -596,15 +596,15 @@ header .menu-bar .nav-bar.show li::after {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .Main .rectangle158 {
+  .Main .section-formulario {
     overflow: hidden;
   }
-  .Main .rectangle158 .rectangle201 {
+  .Main .section-formulario .rectangle201 {
     display: flex;
     justify-content: center;
     max-width: 100%;
   }
-  .Main .rectangle158 .rectangle201 .frame94 {
+  .Main .section-formulario .rectangle201 .frame94 {
     display: flex;
     flex-direction: column;
     max-width: -moz-fit-content;
@@ -612,11 +612,11 @@ header .menu-bar .nav-bar.show li::after {
   }
 }
 @media (min-width: 1024px) {
-  .Main .rectangle158 {
+  .Main .section-formulario {
     margin-bottom: 40px;
     overflow: visible;
   }
-  .Main .rectangle158 picture {
+  .Main .section-formulario picture {
     position: absolute;
     display: block;
     top: 50%;
@@ -626,7 +626,7 @@ header .menu-bar .nav-bar.show li::after {
     height: 100%;
     text-align: center;
   }
-  .Main .rectangle158 picture img, .Main .rectangle158 picture source {
+  .Main .section-formulario picture img, .Main .section-formulario picture source {
     display: block;
     position: absolute;
     width: 100%;
@@ -634,7 +634,7 @@ header .menu-bar .nav-bar.show li::after {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .Main .rectangle158 .rectangle201 {
+  .Main .section-formulario .rectangle201 {
     position: relative;
     padding: 0;
     background-color: transparent;
@@ -643,7 +643,7 @@ header .menu-bar .nav-bar.show li::after {
     justify-content: flex-end;
     padding-right: max(0px, 50% - 600px);
   }
-  .Main .rectangle158 .rectangle201 .frame94 {
+  .Main .section-formulario .rectangle201 .frame94 {
     position: relative;
     width: 427px;
     max-width: 100%;
@@ -652,33 +652,33 @@ header .menu-bar .nav-bar.show li::after {
     transform: translateY(40px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
-  .Main .rectangle158 .rectangle201 .frame94 .titular {
+  .Main .section-formulario .rectangle201 .frame94 .titular {
     padding: 30.5px 31px;
   }
-  .Main .rectangle158 .rectangle201 .frame94 .titular .frame33 {
+  .Main .section-formulario .rectangle201 .frame94 .titular .frame33 {
     padding: 0;
   }
-  .Main .rectangle158 .rectangle201 .frame94 .titular .frame33 p {
+  .Main .section-formulario .rectangle201 .frame94 .titular .frame33 p {
     font-size: 35px;
     line-height: 37.07px;
     text-align: center;
   }
-  .Main .rectangle158 .rectangle201 .frame94 .titular .frame33 span {
+  .Main .section-formulario .rectangle201 .frame94 .titular .frame33 span {
     font-size: 32px;
     font-weight: 600;
     line-height: 33.89px;
     text-align: center;
   }
-  .Main .rectangle158 .rectangle201 .frame94 .insight {
+  .Main .section-formulario .rectangle201 .frame94 .insight {
     padding: 23.5px 35px 23.5px 30px;
   }
-  .Main .rectangle158 .rectangle201 .frame94 .insight .frame32 .element-inisht p {
+  .Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht p {
     font-family: "OpenSans";
     font-weight: 400;
     font-size: 18px;
     line-height: 24.51px;
   }
-  .Main .rectangle158 .rectangle201 .frame94 .frame93 {
+  .Main .section-formulario .rectangle201 .frame94 .frame93 {
     padding: 18.5px 51.5px;
   }
 }
@@ -1094,6 +1094,7 @@ header .menu-bar .nav-bar.show li::after {
   flex-direction: column;
   max-width: 100%;
   margin: 0 auto;
+  gap: 10px;
 }
 .Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 p {
   font-family: "Montserrat";
@@ -1167,23 +1168,21 @@ header .menu-bar .nav-bar.show li::after {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
   }
   .Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
     display: flex;
     flex-direction: column;
     max-width: 840px;
     margin: 0 auto;
-    gap: 10px;
   }
-  .Main .frame85 .wrap-swiper .swiper-pagination {
-    display: none;
-  }
-  .Main .frame85 .wrap-swiper .swiper-button-next, .Main .frame85 .wrap-swiper .swiper-button-prev {
-    display: flex;
+  .Main .frame85 .wrap-swiper .swiper .swiper-button-next, .Main .frame85 .wrap-swiper .swiper .swiper-button-prev {
+    display: block;
     font-size: 32px;
     color: #323232;
     cursor: pointer;
+  }
+  .Main .frame85 .wrap-swiper .swiper-pagination {
+    display: none;
   }
 }
 .Main .frame45 {
