@@ -526,7 +526,7 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
 
-    .section-formulario {
+    .header-form {
         position: relative;
         overflow: hidden;
      
@@ -544,12 +544,12 @@ header{
 
         }
 
-        .rectangle201 {
+        .header-form-main-container {
             position: relative;
             background-color: $corporative-blue;
             padding: 20px 20px 47px 20px;
 
-            .frame94 {
+            .form-box {
                 margin-top: -47px;
                 background-color: white;
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -702,13 +702,13 @@ header{
         @media(min-width: $tablet){
             overflow: hidden;
 
-            .rectangle201{
+            .header-form-main-container{
                 display: flex;
                 justify-content: center;
                 max-width: 100%;
                 //margin: 0 auto;
                 
-                .frame94{
+                .form-box{
                     display: flex;
                     flex-direction: column;
                     max-width: fit-content;
@@ -741,7 +741,7 @@ header{
             
             }
 
-            .rectangle201 {
+            .header-form-main-container {
                 position: relative;
                 padding: 0;
                 background-color: transparent;
@@ -750,7 +750,7 @@ header{
                 justify-content: flex-end;
                 padding-right: max(0px, (50% - 600px));
                     
-                .frame94 {
+                .form-box {
                     position: relative;
                     width: 427px;
                     max-width: 100%;
@@ -800,10 +800,10 @@ header{
         }
     }
 
-    .frame96{
+    .skills{
         //padding: 40px 32.5px;
 
-        .frame61{
+        .skills-header{
             font-family: "Montserrat";
             font-size: 25px;
             font-weight: 600;
@@ -825,12 +825,12 @@ header{
             }
         }
 
-        .frame73{
+        .skills-main-container{
             display: flex;
             flex-direction: column;            
             padding-top: 0px;
            
-            .frame70, .frame71, .frame72{
+            .skill1, .skill2, .skill3{
                 display: flex;                
                 padding: 40px 32.5px;
                 
@@ -891,7 +891,7 @@ header{
             display: flex;
             flex-direction: column;
 
-            .frame61{
+            .skills-header{
                 width:100%;
                 display: flex;
                 padding: 56.13px 10px 20px 10px;
@@ -912,7 +912,7 @@ header{
                     
                 }
             }
-            .frame73{
+            .skills-main-container{
                 display: flex;
                 flex-direction: row;
                 max-width: 1200px;
@@ -922,7 +922,7 @@ header{
         }
     }
 
-    .seo2 {
+    .seo-info {
         display: flex;
         flex-direction: column;
         padding: 8px 32.5px;
@@ -983,7 +983,8 @@ header{
             }
     
         }
-        @media (min-width: $laptop){               
+        @media (min-width: $laptop){      
+            margin-bottom: 65px;         
             .main-container .acordeon label{
                 .frame91{
                     max-width: 302px;
@@ -996,7 +997,7 @@ header{
         }
     }
 
-    .frame97{
+    .doctors{
         display:flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -1005,7 +1006,7 @@ header{
         background-color: $form-background;
         padding: 54.5px 20px;
 
-        .frame76{
+        .doctors-main-container{
             width: 100%;
 
             picture{
@@ -1024,7 +1025,7 @@ header{
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             }
 
-            .frame75{
+            .text-container{
                 display: flex;
                 flex-direction: column;
                 gap:20px;
@@ -1061,7 +1062,7 @@ header{
         }
 
         @media (min-width: 700px){            
-            .frame76 img{
+            .doctors-main-container img{
                 margin-bottom: 36px;
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             }
@@ -1070,7 +1071,7 @@ header{
             width: 100%;
             display: flex;
     
-            .frame76 {
+            .doctors-main-container {
                 max-width: 1200px;
                 margin: 0 auto;
                 height: auto;
@@ -1085,7 +1086,7 @@ header{
                     
                 }
     
-                .frame75 {
+                .text-container {
                     max-width: 576px;
                     gap: 20px;
                     margin: 10px 0px;
@@ -1094,13 +1095,13 @@ header{
         }
     }
 
-    .frame43{
+    .budget{
         width: 100%;
         height: 100%;
         padding: 21.5px;
         background-color: $corporative-red;
 
-        .frame42{
+        .budget-container{
             display:flex;
             flex-direction: column;
             gap: 15px;
@@ -1135,7 +1136,7 @@ header{
             }
         }
         @media (min-width: $laptop){            
-            .frame42{
+            .budget-container{
                 flex-direction: row;
                 justify-content: center;
     
@@ -1149,16 +1150,16 @@ header{
         }
     }
 
-    .frame92 {
+    .faq {
         margin: 27px 10px;
         padding: 10px;
     
-        .frame84 {
+        .faq-main-container {
             display: flex;
             flex-direction: column;
             gap: 50px;
     
-            .frame56 {
+            .faq-header {
                 font-family: "Montserrat";
                 font-size: 20px;
                 font-weight: 600;
@@ -1179,80 +1180,14 @@ header{
                 }
             }
     
-            .frame83 {
+            .faq-acordeon-container {
                 width: 100%;
                 max-width: 100%;
                 margin: auto;
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
-    
-                // .acordeon {
-                //     background-color: white;
-    
-                //     label {
-                //         display: flex;
-                //         flex-direction: row;
-                //         padding: 10px 10px 10px 25px;
-                //         align-items: center;
-                //         justify-content: space-between;
-                //         cursor: pointer;
-                //         border: 1px solid #EDEDED;
-                //         transition: all 300ms ease;
-    
-                //         p {
-                //             font-size: 18px;
-                //             font-weight: 600;
-                //             line-height: 21.94px;
-                //         }
-    
-                //         img {
-                //             width: 32px;
-                //             height: 32px;
-                //             transition: transform 300ms ease;
-                //         }
-    
-                //         &:hover {
-                //             background-color: #F5333F1A;
-                //         }
-                //     }
-    
-                //     .contenido-acordeon {
-                //         padding: 0px;
-                //         //margin: 0px 20px;
-                //         max-height: 0px; 
-                //         overflow: hidden;
-                //         opacity: 0; 
-                //         transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
-    
-                //         p {
-                //             font-family: "OpenSans";
-                //             font-size: 18px;
-                //             line-height: 27.12px;
-                //             color: $corporative-text;
-                //             max-width: 840px;
-                //             padding-bottom: 35px;
-                //         }
-                //     }
-    
-                //     input[type="checkbox"]:checked + label + .contenido-acordeon {
-                //         max-height: max-content; 
-                //         padding: 15px 0px;
-                //         opacity: 1;
-                //     }
-    
-                //     input[type="checkbox"]:checked + label img {
-                //         transform: rotate(180deg);
-                //     }
-    
-                //     input[type="checkbox"]:checked + label {
-                //         border: none;
-                //     }
-    
-                //     .btn-acordeon {
-                //         display: none;
-                //     }
-                // }
+                gap: 10px;   
+                
             }
         }
         @media (min-width: $laptop) {            
@@ -1261,8 +1196,8 @@ header{
             max-width: 1200px;
             padding: 5.5rem 6rem;
     
-            .frame84 {
-                .frame56 {
+            .faq-main-container {
+                .faq-header {
                     padding: 0px;
                     height: 2.81rem;
     
@@ -1279,47 +1214,19 @@ header{
                     }
                 }
     
-                .frame83 {
+                .faq-acordeon-container {
                     box-sizing: border-box;
                     width: 100%;
                     max-width: 100%;
                     height: auto;
     
-                    // .acordeon {
-                    //     label {
-                    //         max-height: 69px;
-                    //         padding: 18.5px 36px 18.5px 51px;
-
-                    //         p {
-                    //             padding: 0px;
-                    //         }
-    
-                    //         img {
-                    //             margin-right: 38px;
-                    //         }
-                    //     }
-    
-                    //     .contenido-acordeon {
-                    //         margin: 0 auto;
-                    //         max-width: 840px;
-                    //         justify-content: center;
-                    //         opacity: 0;
-                    //         transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease;
-                    //         max-height: 0;
-                    //     }
-    
-                    //     input[type="checkbox"]:checked + label + .contenido-acordeon {
-                    //         padding: 25px 0px 35px 0px;
-                    //         max-height: 200px; 
-                    //         opacity: 1;
-                    //     }
-                    // }
+                    
                 }
             }            
         }
     }
 
-    .frame85 {
+    .reviews-slider {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -1329,7 +1236,7 @@ header{
         margin: 0 auto;
         gap: 20px;
     
-        .frame56 {
+        .reviews-header {
             font-family: "Montserrat";
             font-size: 20px;
             font-weight: 600;
@@ -1379,7 +1286,7 @@ header{
                         margin: 0 auto;
                         gap: 10px;
         
-                        .frame98 {
+                        .new-review {
                             p {
                                 font-family: "Montserrat";
                                 font-size: 18px;
@@ -1439,7 +1346,7 @@ header{
             width: 100%;
             margin-bottom: 57.13px;
     
-            .frame56 {
+            .reviews-header {
                 max-width: 100%;
                 width: 100%;
                 align-self: center;
@@ -1496,13 +1403,13 @@ header{
         }
     }
     
-    .frame45 {
+    .contact {
         width: 100%;
         height: 100%;
         padding: 21.5px;
         background-color: $corporative-red;
     
-        .frame42 {            
+        .contact-main-container {            
             .frame51 {
                 display: flex;
                 flex-direction: column;
@@ -1600,6 +1507,7 @@ header{
                     line-height: 24.38px;
                     color: $corporative-blue;
                     text-align: center;
+                    cursor: pointer;
                     
                 }
             }
@@ -1608,7 +1516,7 @@ header{
             width: 100%;
             height: 100%;
 
-            .frame42{
+            .contact-main-container{
                 max-width: 100%;
                 display: flex;
                 margin: 0 auto;
@@ -1670,12 +1578,12 @@ header{
         }
     }
 
-    .frame81{
+    .pictures-results{
         display: flex;
         width: 100%;
         height: 100%;
         padding: 27px 20px 42px 20px;
-        .frame80{
+        .pictures-main-container{
             padding: 10px 0px;
             display: flex;
             flex-direction: column;
@@ -1721,7 +1629,7 @@ header{
         }
         @media (min-width: $laptop){
             
-            .frame80{
+            .pictures-main-container{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
@@ -1760,7 +1668,7 @@ footer{
         background-color: #BDBDBD;
     }
     
-    .frame49{
+    .more-info-container{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1770,7 +1678,7 @@ footer{
         
         
                 
-        .frame48{            
+        .more-info-content{            
             display: flex;
             flex-direction: column;
             width: 100%;            
@@ -1800,7 +1708,7 @@ footer{
                 text-align: center;
             }
 
-            .frame47{
+            .phone{
                 display: flex;
                 width: 100%;
                 max-width: 100%;
@@ -1817,7 +1725,7 @@ footer{
                 justify-items: center;
             }
 
-            .frame45{
+            .rrss{
                 display: flex;
                 flex-direction: column;
                 gap:10px;
@@ -1837,9 +1745,9 @@ footer{
         }
     }
     .condiciones-footer{
-        .frame46{
+        .policies-container{
             margin-bottom: 15px;
-            .frame3{
+            .policies-content{
                 .aviso-legal{
                     padding: 5%;
                     display: flex;
@@ -1860,9 +1768,9 @@ footer{
         }
     }
     @media (min-width: $laptop) {
-        .frame49{
+        .more-info-container{
             align-items: center;
-            .frame48{
+            .more-info-content{
                 flex-direction: row;
                 max-width: 100%;
                 width: 100%;
@@ -1885,7 +1793,7 @@ footer{
                     }
                 }
 
-                .frame47, .frame45{
+                .phone, .rrss{
                     width: 100%;
                     max-width: max-content;
                     align-items: flex-start;
@@ -1898,7 +1806,7 @@ footer{
         .condiciones-footer {
             margin-bottom: 15px;
 
-            .frame46 .frame3 .aviso-legal{
+            .policies-container .policies-content .aviso-legal{
                 padding:0px;
                 line-height: 46px;
                 gap: 15px;

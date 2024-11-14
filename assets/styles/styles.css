@@ -442,42 +442,42 @@ header .menu-bar .nav-bar.show li::after {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.Main .section-formulario {
+.Main .header-form {
   position: relative;
   overflow: hidden;
 }
-.Main .section-formulario picture {
+.Main .header-form picture {
   position: relative;
   display: block;
   width: 100%;
   height: auto;
 }
-.Main .section-formulario picture img, .Main .section-formulario picture source {
+.Main .header-form picture img, .Main .header-form picture source {
   width: 100%;
   height: auto;
   display: block;
 }
-.Main .section-formulario .rectangle201 {
+.Main .header-form .header-form-main-container {
   position: relative;
   background-color: #011E41;
   padding: 20px 20px 47px 20px;
 }
-.Main .section-formulario .rectangle201 .frame94 {
+.Main .header-form .header-form-main-container .form-box {
   margin-top: -47px;
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
-.Main .section-formulario .rectangle201 .frame94 .titular {
+.Main .header-form .header-form-main-container .form-box .titular {
   padding: 8px;
   gap: 10px;
   background-color: #F5333F;
 }
-.Main .section-formulario .rectangle201 .frame94 .titular .frame33 {
+.Main .header-form .header-form-main-container .form-box .titular .frame33 {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-.Main .section-formulario .rectangle201 .frame94 .titular .frame33 p {
+.Main .header-form .header-form-main-container .form-box .titular .frame33 p {
   font-size: 25px;
   font-weight: 800;
   text-transform: uppercase;
@@ -485,102 +485,102 @@ header .menu-bar .nav-bar.show li::after {
   line-height: 26.48px;
   color: #FFFFFF;
 }
-.Main .section-formulario .rectangle201 .frame94 .titular .frame33 span {
+.Main .header-form .header-form-main-container .form-box .titular .frame33 span {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   line-height: 25.42px;
 }
-.Main .section-formulario .rectangle201 .frame94 .insight {
+.Main .header-form .header-form-main-container .form-box .insight {
   background-color: white;
   padding: 14.5px 12px 14.5px 7px;
   gap: 12px;
 }
-.Main .section-formulario .rectangle201 .frame94 .insight .frame32 {
+.Main .header-form .header-form-main-container .form-box .insight .frame32 {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht {
+.Main .header-form .header-form-main-container .form-box .insight .frame32 .element-inisht {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
-.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht .icon {
+.Main .header-form .header-form-main-container .form-box .insight .frame32 .element-inisht .icon {
   width: 32px;
   height: 32px;
 }
-.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht .icon img {
+.Main .header-form .header-form-main-container .form-box .insight .frame32 .element-inisht .icon img {
   width: 32px;
   height: 32px;
 }
-.Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht p {
+.Main .header-form .header-form-main-container .form-box .insight .frame32 .element-inisht p {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 16px;
   line-height: 21.79px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 {
+.Main .header-form .header-form-main-container .form-box .frame93 {
   width: 100%;
   max-height: 100%;
   background-color: #F6F6F6;
   padding: 21.5px 27px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 h3 {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 h3 {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 input {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 input {
   width: 100%;
   padding: 15px 16px;
   border: 1px solid #ededed;
   border-radius: 3px;
   max-height: 45px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::-moz-placeholder {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 input::-moz-placeholder {
   color: #B1B1B1;
   font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 input::placeholder {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 input::placeholder {
   color: #B1B1B1;
   font-family: "OpenSans";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.79px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 .policy-checkbox {
   display: flex;
   flex-wrap: nowrap;
   font-family: "OpenSans";
   font-size: 12px;
   color: #B1B1B1;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox input[type=checkbox] {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 .policy-checkbox input[type=checkbox] {
   margin-right: 6px;
   width: 30px;
   height: auto;
   color: #B1B1B1;
   outline: none;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 .policy-checkbox p {
   font-family: "OpenSans";
   font-size: 12px;
   font-weight: 400;
   line-height: 16.34px;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 .frame36 .policy-checkbox p span {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 .policy-checkbox p span {
   font-weight: 700;
 }
-.Main .section-formulario .rectangle201 .frame94 .frame93 form .frame37 a button {
+.Main .header-form .header-form-main-container .form-box .frame93 form .frame37 a button {
   width: 100%;
   padding: 15px 16px;
   background-color: #F5333F;
@@ -596,15 +596,15 @@ header .menu-bar .nav-bar.show li::after {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .Main .section-formulario {
+  .Main .header-form {
     overflow: hidden;
   }
-  .Main .section-formulario .rectangle201 {
+  .Main .header-form .header-form-main-container {
     display: flex;
     justify-content: center;
     max-width: 100%;
   }
-  .Main .section-formulario .rectangle201 .frame94 {
+  .Main .header-form .header-form-main-container .form-box {
     display: flex;
     flex-direction: column;
     max-width: -moz-fit-content;
@@ -612,11 +612,11 @@ header .menu-bar .nav-bar.show li::after {
   }
 }
 @media (min-width: 1024px) {
-  .Main .section-formulario {
+  .Main .header-form {
     margin-bottom: 40px;
     overflow: visible;
   }
-  .Main .section-formulario picture {
+  .Main .header-form picture {
     position: absolute;
     display: block;
     top: 50%;
@@ -626,7 +626,7 @@ header .menu-bar .nav-bar.show li::after {
     height: 100%;
     text-align: center;
   }
-  .Main .section-formulario picture img, .Main .section-formulario picture source {
+  .Main .header-form picture img, .Main .header-form picture source {
     display: block;
     position: absolute;
     width: 100%;
@@ -634,7 +634,7 @@ header .menu-bar .nav-bar.show li::after {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .Main .section-formulario .rectangle201 {
+  .Main .header-form .header-form-main-container {
     position: relative;
     padding: 0;
     background-color: transparent;
@@ -643,7 +643,7 @@ header .menu-bar .nav-bar.show li::after {
     justify-content: flex-end;
     padding-right: max(0px, 50% - 600px);
   }
-  .Main .section-formulario .rectangle201 .frame94 {
+  .Main .header-form .header-form-main-container .form-box {
     position: relative;
     width: 427px;
     max-width: 100%;
@@ -652,37 +652,37 @@ header .menu-bar .nav-bar.show li::after {
     transform: translateY(40px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
-  .Main .section-formulario .rectangle201 .frame94 .titular {
+  .Main .header-form .header-form-main-container .form-box .titular {
     padding: 30.5px 31px;
   }
-  .Main .section-formulario .rectangle201 .frame94 .titular .frame33 {
+  .Main .header-form .header-form-main-container .form-box .titular .frame33 {
     padding: 0;
   }
-  .Main .section-formulario .rectangle201 .frame94 .titular .frame33 p {
+  .Main .header-form .header-form-main-container .form-box .titular .frame33 p {
     font-size: 35px;
     line-height: 37.07px;
     text-align: center;
   }
-  .Main .section-formulario .rectangle201 .frame94 .titular .frame33 span {
+  .Main .header-form .header-form-main-container .form-box .titular .frame33 span {
     font-size: 32px;
     font-weight: 600;
     line-height: 33.89px;
     text-align: center;
   }
-  .Main .section-formulario .rectangle201 .frame94 .insight {
+  .Main .header-form .header-form-main-container .form-box .insight {
     padding: 23.5px 35px 23.5px 30px;
   }
-  .Main .section-formulario .rectangle201 .frame94 .insight .frame32 .element-inisht p {
+  .Main .header-form .header-form-main-container .form-box .insight .frame32 .element-inisht p {
     font-family: "OpenSans";
     font-weight: 400;
     font-size: 18px;
     line-height: 24.51px;
   }
-  .Main .section-formulario .rectangle201 .frame94 .frame93 {
+  .Main .header-form .header-form-main-container .form-box .frame93 {
     padding: 18.5px 51.5px;
   }
 }
-.Main .frame96 .frame61 {
+.Main .skills .skills-header {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: 600;
@@ -693,7 +693,7 @@ header .menu-bar .nav-bar.show li::after {
   text-align: center;
   color: #011E41;
 }
-.Main .frame96 .frame61::after {
+.Main .skills .skills-header::after {
   content: "";
   display: block;
   width: 100%;
@@ -702,27 +702,27 @@ header .menu-bar .nav-bar.show li::after {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-.Main .frame96 .frame73 {
+.Main .skills .skills-main-container {
   display: flex;
   flex-direction: column;
   padding-top: 0px;
 }
-.Main .frame96 .frame73 .frame70, .Main .frame96 .frame73 .frame71, .Main .frame96 .frame73 .frame72 {
+.Main .skills .skills-main-container .skill1, .Main .skills .skills-main-container .skill2, .Main .skills .skills-main-container .skill3 {
   display: flex;
   padding: 40px 32.5px;
 }
-.Main .frame96 .frame73 .frame70 .frame63, .Main .frame96 .frame73 .frame71 .frame63, .Main .frame96 .frame73 .frame72 .frame63 {
+.Main .skills .skills-main-container .skill1 .frame63, .Main .skills .skills-main-container .skill2 .frame63, .Main .skills .skills-main-container .skill3 .frame63 {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.Main .frame96 .frame73 .frame70 .frame63 img, .Main .frame96 .frame73 .frame71 .frame63 img, .Main .frame96 .frame73 .frame72 .frame63 img {
+.Main .skills .skills-main-container .skill1 .frame63 img, .Main .skills .skills-main-container .skill2 .frame63 img, .Main .skills .skills-main-container .skill3 .frame63 img {
   -o-object-fit: contain;
      object-fit: contain;
   align-self: center;
   margin-bottom: 20px;
 }
-.Main .frame96 .frame73 .frame70 .frame63 h3, .Main .frame96 .frame73 .frame71 .frame63 h3, .Main .frame96 .frame73 .frame72 .frame63 h3 {
+.Main .skills .skills-main-container .skill1 .frame63 h3, .Main .skills .skills-main-container .skill2 .frame63 h3, .Main .skills .skills-main-container .skill3 .frame63 h3 {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
@@ -731,7 +731,7 @@ header .menu-bar .nav-bar.show li::after {
   text-align: center;
   margin-bottom: 20px;
 }
-.Main .frame96 .frame73 .frame70 .frame63 p, .Main .frame96 .frame73 .frame71 .frame63 p, .Main .frame96 .frame73 .frame72 .frame63 p {
+.Main .skills .skills-main-container .skill1 .frame63 p, .Main .skills .skills-main-container .skill2 .frame63 p, .Main .skills .skills-main-container .skill3 .frame63 p {
   font-family: "OpenSans";
   font-size: 18px;
   font-weight: 400;
@@ -739,7 +739,7 @@ header .menu-bar .nav-bar.show li::after {
   color: #323232;
   padding-bottom: 0px;
 }
-.Main .frame96 .frame73 .frame70 .frame63 a, .Main .frame96 .frame73 .frame71 .frame63 a, .Main .frame96 .frame73 .frame72 .frame63 a {
+.Main .skills .skills-main-container .skill1 .frame63 a, .Main .skills .skills-main-container .skill2 .frame63 a, .Main .skills .skills-main-container .skill3 .frame63 a {
   display: block;
   text-align: center;
   font-family: "Montserrat";
@@ -750,33 +750,33 @@ header .menu-bar .nav-bar.show li::after {
   padding-top: 10px;
 }
 @media (min-width: 1024px) {
-  .Main .frame96 {
+  .Main .skills {
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
   }
-  .Main .frame96 .frame61 {
+  .Main .skills .skills-header {
     width: 100%;
     display: flex;
     padding: 56.13px 10px 20px 10px;
     flex-direction: column;
     align-items: center;
   }
-  .Main .frame96 .frame61 p {
+  .Main .skills .skills-header p {
     max-width: 50%;
     font-size: 40px;
     font-weight: 600;
     line-height: 52.96px;
     text-align: center;
   }
-  .Main .frame96 .frame61::after {
+  .Main .skills .skills-header::after {
     content: "";
     display: block;
     width: 30%;
   }
-  .Main .frame96 .frame73 {
+  .Main .skills .skills-main-container {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
@@ -784,37 +784,37 @@ header .menu-bar .nav-bar.show li::after {
     margin-bottom: 56.13px;
   }
 }
-.Main .seo2 {
+.Main .seo-info {
   display: flex;
   flex-direction: column;
   padding: 8px 32.5px;
   text-align: center;
 }
-.Main .seo2 .main-container {
+.Main .seo-info .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Main .seo2 .main-container h3 {
+.Main .seo-info .main-container h3 {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
   line-height: 24.38px;
   color: #011E41;
 }
-.Main .seo2 .main-container .acordeon label {
+.Main .seo-info .main-container .acordeon label {
   display: flex;
   flex-direction: column;
   border: none;
 }
-.Main .seo2 .main-container .acordeon label .frame91 {
+.Main .seo-info .main-container .acordeon label .frame91 {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px 17px;
   width: 100%;
 }
-.Main .seo2 .main-container .acordeon label .frame91::before, .Main .seo2 .main-container .acordeon label .frame91::after {
+.Main .seo-info .main-container .acordeon label .frame91::before, .Main .seo-info .main-container .acordeon label .frame91::after {
   content: "";
   display: block;
   width: 100%;
@@ -822,26 +822,29 @@ header .menu-bar .nav-bar.show li::after {
   background-color: #F5333F;
   margin: 15px 0;
 }
-.Main .seo2 .main-container .acordeon label .frame91 img {
+.Main .seo-info .main-container .acordeon label .frame91 img {
   max-width: 32px;
   max-height: 32px;
   width: 100%;
 }
-.Main .seo2 .main-container .acordeon label:hover {
+.Main .seo-info .main-container .acordeon label:hover {
   background-color: white;
 }
-.Main .seo2 .main-container .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+.Main .seo-info .main-container .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
   padding: 20px 0px;
 }
 @media (min-width: 1024px) {
-  .Main .seo2 .main-container .acordeon label .frame91 {
+  .Main .seo-info {
+    margin-bottom: 65px;
+  }
+  .Main .seo-info .main-container .acordeon label .frame91 {
     max-width: 302px;
   }
-  .Main .seo2 .main-container .acordeon label:hover {
+  .Main .seo-info .main-container .acordeon label:hover {
     background-color: white;
   }
 }
-.Main .frame97 {
+.Main .doctors {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -850,16 +853,16 @@ header .menu-bar .nav-bar.show li::after {
   background-color: #F6F6F6;
   padding: 54.5px 20px;
 }
-.Main .frame97 .frame76 {
+.Main .doctors .doctors-main-container {
   width: 100%;
 }
-.Main .frame97 .frame76 picture {
+.Main .doctors .doctors-main-container picture {
   width: 100%;
   height: 100%;
   overflow: hidden;
   margin-bottom: 36px;
 }
-.Main .frame97 .frame76 img {
+.Main .doctors .doctors-main-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -868,31 +871,31 @@ header .menu-bar .nav-bar.show li::after {
   margin-bottom: 36px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
-.Main .frame97 .frame76 .frame75 {
+.Main .doctors .doctors-main-container .text-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.Main .frame97 .frame76 .frame75 .frame74 {
+.Main .doctors .doctors-main-container .text-container .frame74 {
   display: flex;
   flex-direction: column;
   gap: 11px;
 }
-.Main .frame97 .frame76 .frame75 .frame74 h3 {
+.Main .doctors .doctors-main-container .text-container .frame74 h3 {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: 700;
   line-height: 30.48px;
   color: #011E41;
 }
-.Main .frame97 .frame76 .frame75 .frame74 p {
+.Main .doctors .doctors-main-container .text-container .frame74 p {
   font-family: "OpenSans";
   font-size: 20px;
   font-weight: 600;
   line-height: 27.24px;
   color: #F5333F;
 }
-.Main .frame97 .frame76 .frame75 p {
+.Main .doctors .doctors-main-container .text-container p {
   font-family: "OpenSans";
   font-size: 18px;
   font-weight: 400;
@@ -900,17 +903,17 @@ header .menu-bar .nav-bar.show li::after {
   color: #323232;
 }
 @media (min-width: 700px) {
-  .Main .frame97 .frame76 img {
+  .Main .doctors .doctors-main-container img {
     margin-bottom: 36px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 }
 @media (min-width: 1024px) {
-  .Main .frame97 {
+  .Main .doctors {
     width: 100%;
     display: flex;
   }
-  .Main .frame97 .frame76 {
+  .Main .doctors .doctors-main-container {
     max-width: 1200px;
     margin: 0 auto;
     height: auto;
@@ -918,30 +921,30 @@ header .menu-bar .nav-bar.show li::after {
     flex-direction: row;
     gap: 36px;
   }
-  .Main .frame97 .frame76 img {
+  .Main .doctors .doctors-main-container img {
     width: 100%;
     max-width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
-  .Main .frame97 .frame76 .frame75 {
+  .Main .doctors .doctors-main-container .text-container {
     max-width: 576px;
     gap: 20px;
     margin: 10px 0px;
   }
 }
-.Main .frame43 {
+.Main .budget {
   width: 100%;
   height: 100%;
   padding: 21.5px;
   background-color: #F5333F;
 }
-.Main .frame43 .frame42 {
+.Main .budget .budget-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
 }
-.Main .frame43 .frame42 p {
+.Main .budget .budget-container p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -949,7 +952,7 @@ header .menu-bar .nav-bar.show li::after {
   text-align: center;
   color: white;
 }
-.Main .frame43 .frame42 a button {
+.Main .budget .budget-container a button {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -966,27 +969,27 @@ header .menu-bar .nav-bar.show li::after {
   cursor: pointer;
 }
 @media (min-width: 1024px) {
-  .Main .frame43 .frame42 {
+  .Main .budget .budget-container {
     flex-direction: row;
     justify-content: center;
   }
-  .Main .frame43 .frame42 p {
+  .Main .budget .budget-container p {
     font-size: 25px;
     font-weight: 700;
     line-height: 1.22rem;
     margin-right: 40px;
   }
 }
-.Main .frame92 {
+.Main .faq {
   margin: 27px 10px;
   padding: 10px;
 }
-.Main .frame92 .frame84 {
+.Main .faq .faq-main-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.Main .frame92 .frame84 .frame56 {
+.Main .faq .faq-main-container .faq-header {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
@@ -995,7 +998,7 @@ header .menu-bar .nav-bar.show li::after {
   text-align: center;
   color: #011E41;
 }
-.Main .frame92 .frame84 .frame56::after {
+.Main .faq .faq-main-container .faq-header::after {
   content: "";
   display: block;
   min-width: 295px;
@@ -1005,7 +1008,7 @@ header .menu-bar .nav-bar.show li::after {
   margin-top: 15px;
   margin-bottom: 0px;
 }
-.Main .frame92 .frame84 .frame83 {
+.Main .faq .faq-main-container .faq-acordeon-container {
   width: 100%;
   max-width: 100%;
   margin: auto;
@@ -1014,34 +1017,34 @@ header .menu-bar .nav-bar.show li::after {
   gap: 10px;
 }
 @media (min-width: 1024px) {
-  .Main .frame92 {
+  .Main .faq {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
     padding: 5.5rem 6rem;
   }
-  .Main .frame92 .frame84 .frame56 {
+  .Main .faq .faq-main-container .faq-header {
     padding: 0px;
     height: 2.81rem;
   }
-  .Main .frame92 .frame84 .frame56 p {
+  .Main .faq .faq-main-container .faq-header p {
     font-size: 25px;
     font-weight: 600;
     line-height: 1.22rem;
   }
-  .Main .frame92 .frame84 .frame56::after {
+  .Main .faq .faq-main-container .faq-header::after {
     content: "";
     display: block;
     min-width: 470px;
   }
-  .Main .frame92 .frame84 .frame83 {
+  .Main .faq .faq-main-container .faq-acordeon-container {
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
     height: auto;
   }
 }
-.Main .frame85 {
+.Main .reviews-slider {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -1051,7 +1054,7 @@ header .menu-bar .nav-bar.show li::after {
   margin: 0 auto;
   gap: 20px;
 }
-.Main .frame85 .frame56 {
+.Main .reviews-slider .reviews-header {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
@@ -1061,11 +1064,11 @@ header .menu-bar .nav-bar.show li::after {
   text-align: center;
   color: #011E41;
 }
-.Main .frame85 .frame56 p {
+.Main .reviews-slider .reviews-header p {
   max-width: 80%;
   justify-self: center;
 }
-.Main .frame85 .frame56::after {
+.Main .reviews-slider .reviews-header::after {
   content: "";
   display: block;
   min-width: 276px;
@@ -1075,7 +1078,7 @@ header .menu-bar .nav-bar.show li::after {
   margin-top: 15px;
   margin-bottom: 0px;
 }
-.Main .frame85 .wrap-swiper {
+.Main .reviews-slider .wrap-swiper {
   display: flex;
   width: 100%;
   height: 100%;
@@ -1085,42 +1088,42 @@ header .menu-bar .nav-bar.show li::after {
   margin-bottom: 13px;
   background-color: #FAFAFA;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-wrapper {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper {
   display: flex;
   flex-direction: row;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   margin: 0 auto;
   gap: 10px;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 p {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review p {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
   line-height: 27.12px;
   color: #F5333F;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 ul {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide .frame98 ul img {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review ul img {
   width: 24px;
   height: auto;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide p {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide p {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 18px;
   line-height: 27.12px;
   color: #323232;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-pagination-bullet {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -1129,69 +1132,69 @@ header .menu-bar .nav-bar.show li::after {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-pagination-bullet-active {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-pagination-bullet-active {
   background-color: black;
 }
-.Main .frame85 .wrap-swiper .swiper .swiper-button-next, .Main .frame85 .wrap-swiper .swiper .swiper-button-prev {
+.Main .reviews-slider .wrap-swiper .swiper .swiper-button-next, .Main .reviews-slider .wrap-swiper .swiper .swiper-button-prev {
   display: none;
 }
 @media (min-width: 1024px) {
-  .Main .frame85 {
+  .Main .reviews-slider {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
     width: 100%;
     margin-bottom: 57.13px;
   }
-  .Main .frame85 .frame56 {
+  .Main .reviews-slider .reviews-header {
     max-width: 100%;
     width: 100%;
     align-self: center;
   }
-  .Main .frame85 .frame56 p {
+  .Main .reviews-slider .reviews-header p {
     font-size: 25px;
     font-weight: 600;
     line-height: 1.22rem;
   }
-  .Main .frame85 .frame56::after {
+  .Main .reviews-slider .reviews-header::after {
     content: "";
     display: block;
     min-width: 470px;
   }
-  .Main .frame85 .wrap-swiper {
+  .Main .reviews-slider .wrap-swiper {
     width: 100%;
     max-width: 1200px;
     padding: 61px 106px;
     margin-bottom: 31.04px;
   }
-  .Main .frame85 .wrap-swiper .swiper .swiper-wrapper {
+  .Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .Main .frame85 .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
+  .Main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
     display: flex;
     flex-direction: column;
     max-width: 840px;
     margin: 0 auto;
   }
-  .Main .frame85 .wrap-swiper .swiper .swiper-button-next, .Main .frame85 .wrap-swiper .swiper .swiper-button-prev {
+  .Main .reviews-slider .wrap-swiper .swiper .swiper-button-next, .Main .reviews-slider .wrap-swiper .swiper .swiper-button-prev {
     display: block;
     font-size: 32px;
     color: #323232;
     cursor: pointer;
   }
-  .Main .frame85 .wrap-swiper .swiper-pagination {
+  .Main .reviews-slider .wrap-swiper .swiper-pagination {
     display: none;
   }
 }
-.Main .frame45 {
+.Main .contact {
   width: 100%;
   height: 100%;
   padding: 21.5px;
   background-color: #F5333F;
 }
-.Main .frame45 .frame42 .frame51 {
+.Main .contact .contact-main-container .frame51 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1201,12 +1204,12 @@ header .menu-bar .nav-bar.show li::after {
   margin: auto;
   gap: 30px;
 }
-.Main .frame45 .frame42 .frame51 .header-text {
+.Main .contact .contact-main-container .frame51 .header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Main .frame45 .frame42 .frame51 .header-text h3 {
+.Main .contact .contact-main-container .frame51 .header-text h3 {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: 700;
@@ -1214,25 +1217,25 @@ header .menu-bar .nav-bar.show li::after {
   gap: 0px;
   color: white;
 }
-.Main .frame45 .frame42 .frame51 .header-text p {
+.Main .contact .contact-main-container .frame51 .header-text p {
   font-size: 25px;
   font-weight: 400;
   font-style: italic;
   line-height: 30.48px;
   color: white;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container {
+.Main .contact .contact-main-container .frame51 .inputs-container {
   display: flex;
   flex-direction: column;
   padding: 0px 33.5px;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .inputs-text input {
+.Main .contact .contact-main-container .frame51 .inputs-container .inputs-text input {
   width: 100%;
   min-height: 40px;
   margin-bottom: 20px;
   border: none;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .inputs-text input::-moz-placeholder {
+.Main .contact .contact-main-container .frame51 .inputs-container .inputs-text input::-moz-placeholder {
   font-family: "Montserrat";
   font-size: 16px;
   font-style: italic;
@@ -1240,7 +1243,7 @@ header .menu-bar .nav-bar.show li::after {
   font-weight: 400;
   padding: 10px;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .inputs-text input::placeholder {
+.Main .contact .contact-main-container .frame51 .inputs-container .inputs-text input::placeholder {
   font-family: "Montserrat";
   font-size: 16px;
   font-style: italic;
@@ -1248,28 +1251,28 @@ header .menu-bar .nav-bar.show li::after {
   font-weight: 400;
   padding: 10px;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox {
+.Main .contact .contact-main-container .frame51 .inputs-container .policy-checkbox {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox input[type=checkbox] {
+.Main .contact .contact-main-container .frame51 .inputs-container .policy-checkbox input[type=checkbox] {
   margin-right: 6px;
   width: 30px;
   height: 30px;
   outline: none;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox p {
+.Main .contact .contact-main-container .frame51 .inputs-container .policy-checkbox p {
   font-family: "OpenSans";
   font-size: 12px;
   font-weight: 400;
   line-height: 16.34px;
   color: white;
 }
-.Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox p span {
+.Main .contact .contact-main-container .frame51 .inputs-container .policy-checkbox p span {
   font-weight: 700;
 }
-.Main .frame45 .frame42 .frame51 button {
+.Main .contact .contact-main-container .frame51 button {
   background-color: #FFFFFF;
   width: 100%;
   max-width: 133px;
@@ -1283,13 +1286,14 @@ header .menu-bar .nav-bar.show li::after {
   line-height: 24.38px;
   color: #011E41;
   text-align: center;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
-  .Main .frame45 {
+  .Main .contact {
     width: 100%;
     height: 100%;
   }
-  .Main .frame45 .frame42 {
+  .Main .contact .contact-main-container {
     max-width: 100%;
     display: flex;
     margin: 0 auto;
@@ -1297,79 +1301,79 @@ header .menu-bar .nav-bar.show li::after {
     flex-direction: row;
     justify-content: center;
   }
-  .Main .frame45 .frame42 .frame51 {
+  .Main .contact .contact-main-container .frame51 {
     min-width: 440px;
     display: flex;
     flex-direction: row;
     margin: 0;
   }
-  .Main .frame45 .frame42 .frame51 .header-text h3 {
+  .Main .contact .contact-main-container .frame51 .header-text h3 {
     font-family: "Montserrat";
     font-size: 25px;
     font-weight: 700;
     line-height: 30.48px;
   }
-  .Main .frame45 .frame42 .frame51 .header-text p {
+  .Main .contact .contact-main-container .frame51 .header-text p {
     font-size: 25px;
     font-weight: 400;
     font-style: italic;
     line-height: 30.48px;
   }
-  .Main .frame45 .frame42 .frame51 .inputs-container {
+  .Main .contact .contact-main-container .frame51 .inputs-container {
     display: flex;
     flex-direction: column;
   }
-  .Main .frame45 .frame42 .frame51 .inputs-container .inputs-text {
+  .Main .contact .contact-main-container .frame51 .inputs-container .inputs-text {
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin-bottom: 10px;
   }
-  .Main .frame45 .frame42 .frame51 .inputs-container .inputs-text input {
+  .Main .contact .contact-main-container .frame51 .inputs-container .inputs-text input {
     min-width: 200px;
     margin-bottom: 0px;
   }
-  .Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox {
+  .Main .contact .contact-main-container .frame51 .inputs-container .policy-checkbox {
     margin-bottom: 0px;
   }
-  .Main .frame45 .frame42 .frame51 .inputs-container .policy-checkbox input[type=checkbox] {
+  .Main .contact .contact-main-container .frame51 .inputs-container .policy-checkbox input[type=checkbox] {
     width: 20px;
     height: 20px;
   }
-  .Main .frame45 .frame42 .frame51 button {
+  .Main .contact .contact-main-container .frame51 button {
     align-self: flex-start;
   }
 }
-.Main .frame81 {
+.Main .pictures-results {
   display: flex;
   width: 100%;
   height: 100%;
   padding: 27px 20px 42px 20px;
 }
-.Main .frame81 .frame80 {
+.Main .pictures-results .pictures-main-container {
   padding: 10px 0px;
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 5px;
 }
-.Main .frame81 .frame80 picture {
+.Main .pictures-results .pictures-main-container picture {
   flex-grow: 1;
   display: flex;
   width: 100%;
   height: 100%;
 }
-.Main .frame81 .frame80 img {
+.Main .pictures-results .pictures-main-container img {
   width: 100%;
   height: auto;
 }
-.Main .frame81 .frame80 .rectangle168 {
+.Main .pictures-results .pictures-main-container .rectangle168 {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 100%;
 }
-.Main .frame81 .frame80 .frame79 {
+.Main .pictures-results .pictures-main-container .frame79 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1378,7 +1382,7 @@ header .menu-bar .nav-bar.show li::after {
   max-height: 100%;
   gap: 5px;
 }
-.Main .frame81 .frame80 .frame79 .frame78 {
+.Main .pictures-results .pictures-main-container .frame79 .frame78 {
   display: flex;
   width: 100%;
   max-width: 100%;
@@ -1387,7 +1391,7 @@ header .menu-bar .nav-bar.show li::after {
   gap: 5px;
 }
 @media (min-width: 1024px) {
-  .Main .frame81 .frame80 {
+  .Main .pictures-results .pictures-main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1395,11 +1399,11 @@ header .menu-bar .nav-bar.show li::after {
     width: 100%;
     margin: 0 auto;
   }
-  .Main .frame81 .frame80 .frame79 {
+  .Main .pictures-results .pictures-main-container .frame79 {
     display: flex;
     gap: 20px;
   }
-  .Main .frame81 .frame80 .frame79 .frame78 {
+  .Main .pictures-results .pictures-main-container .frame79 .frame78 {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -1421,7 +1425,7 @@ footer::before {
   height: 3px;
   background-color: #BDBDBD;
 }
-footer .frame49 {
+footer .more-info-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1429,7 +1433,7 @@ footer .frame49 {
   padding: 0px 10px;
   padding-bottom: 0px;
 }
-footer .frame49 .frame48 {
+footer .more-info-container .more-info-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1437,17 +1441,17 @@ footer .frame49 .frame48 {
   align-items: center;
   gap: 30px;
 }
-footer .frame49 .frame48 img {
+footer .more-info-container .more-info-content img {
   width: 100%;
   max-width: 490px;
 }
-footer .frame49 .frame48 h3 {
+footer .more-info-container .more-info-content h3 {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
   line-height: 21.94px;
 }
-footer .frame49 .frame48 p {
+footer .more-info-container .more-info-content p {
   font-family: "OpenSans";
   font-size: 18px;
   font-weight: 400;
@@ -1456,41 +1460,41 @@ footer .frame49 .frame48 p {
   width: 100%;
   text-align: center;
 }
-footer .frame49 .frame48 .frame47 {
+footer .more-info-container .more-info-content .phone {
   display: flex;
   width: 100%;
   max-width: 100%;
   flex-direction: column;
   align-items: center;
 }
-footer .frame49 .frame48 .frame47 p {
+footer .more-info-container .more-info-content .phone p {
   max-width: 100%;
 }
-footer .frame49 .frame48 .address {
+footer .more-info-container .more-info-content .address {
   width: 100%;
   max-width: 100%;
   justify-items: center;
 }
-footer .frame49 .frame48 .frame45 {
+footer .more-info-container .more-info-content .rrss {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
 }
-footer .frame49 .frame48 .frame45 .rrss {
+footer .more-info-container .more-info-content .rrss .rrss {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
 }
-footer .frame49 .frame48 .frame45 .rrss .logo img {
+footer .more-info-container .more-info-content .rrss .rrss .logo img {
   max-width: 24px;
   max-height: 24px;
 }
-footer .condiciones-footer .frame46 {
+footer .condiciones-footer .policies-container {
   margin-bottom: 15px;
 }
-footer .condiciones-footer .frame46 .frame3 .aviso-legal {
+footer .condiciones-footer .policies-container .policies-content .aviso-legal {
   padding: 5%;
   display: flex;
   flex-direction: row;
@@ -1498,7 +1502,7 @@ footer .condiciones-footer .frame46 .frame3 .aviso-legal {
   gap: 10px;
   justify-content: center;
 }
-footer .condiciones-footer .frame46 .frame3 .aviso-legal a {
+footer .condiciones-footer .policies-container .policies-content .aviso-legal a {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
@@ -1507,10 +1511,10 @@ footer .condiciones-footer .frame46 .frame3 .aviso-legal a {
   color: #011E41;
 }
 @media (min-width: 1024px) {
-  footer .frame49 {
+  footer .more-info-container {
     align-items: center;
   }
-  footer .frame49 .frame48 {
+  footer .more-info-container .more-info-content {
     flex-direction: row;
     max-width: 100%;
     width: 100%;
@@ -1518,33 +1522,33 @@ footer .condiciones-footer .frame46 .frame3 .aviso-legal a {
     height: auto;
     gap: 96px;
   }
-  footer .frame49 .frame48 #logoCruzRoja {
+  footer .more-info-container .more-info-content #logoCruzRoja {
     max-width: 496px;
     width: 100%;
     max-height: 100;
     height: auto;
   }
-  footer .frame49 .frame48 .address {
+  footer .more-info-container .more-info-content .address {
     width: 100%;
     max-width: -moz-max-content;
     max-width: max-content;
   }
-  footer .frame49 .frame48 .address p {
+  footer .more-info-container .more-info-content .address p {
     text-align: left;
   }
-  footer .frame49 .frame48 .frame47, footer .frame49 .frame48 .frame45 {
+  footer .more-info-container .more-info-content .phone, footer .more-info-container .more-info-content .rrss {
     width: 100%;
     max-width: -moz-max-content;
     max-width: max-content;
     align-items: flex-start;
   }
-  footer .frame49 .frame48 .frame47 p, footer .frame49 .frame48 .frame45 p {
+  footer .more-info-container .more-info-content .phone p, footer .more-info-container .more-info-content .rrss p {
     text-align: left;
   }
   footer .condiciones-footer {
     margin-bottom: 15px;
   }
-  footer .condiciones-footer .frame46 .frame3 .aviso-legal {
+  footer .condiciones-footer .policies-container .policies-content .aviso-legal {
     padding: 0px;
     line-height: 46px;
     gap: 15px;
