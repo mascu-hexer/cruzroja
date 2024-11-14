@@ -54,8 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 10,
+        centeredSlides: false,
         loop: true,
+        centeredSlidesBounds: true,
         
         pagination: {
           el: '.swiper-pagination',
@@ -66,4 +68,30 @@ document.addEventListener('DOMContentLoaded', function() {
           prevEl: '.swiper-button-prev',
         }
     });
+
+    // const swiper = new Swiper('.swiper', {
+    //     direction: 'horizontal',
+    //     slidesPerView: 1,          
+    //     spaceBetween: 0,           
+    //     loop: true,                
+    //     centeredSlides: false,     
+    //     pagination: {
+    //                 el: '.swiper-pagination',
+    //                 },
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //     },
+    //     breakpoints: {
+    //         // Si necesitas diferentes configuraciones por tamaños de pantalla
+    //         1024: {
+    //             slidesPerView: 1,    // Solo un slide en pantallas grandes también
+    //             spaceBetween: 10,
+    //             loop: true,                
+    //             centeredSlides: false,     
+    //             pagination: false,
+    //             centeredSlidesBounds: true,         
+    //                 },
+    //     },
+    // });
 });

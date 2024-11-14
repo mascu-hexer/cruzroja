@@ -521,7 +521,7 @@ header{
 
 
 
-.Main{
+main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1371,7 +1371,7 @@ header{
                 margin-bottom: 31.04px;
 
                 .swiper{     
-                    //overflow: hidden;           
+                    overflow: hidden;           
         
                     .swiper-wrapper {
                         display: flex;
@@ -1402,6 +1402,181 @@ header{
             }
         }
     }
+
+    // .reviews-slider2 {
+    //     display: flex;
+    //     flex-direction: column;
+    //     box-sizing: border-box;
+    //     max-width: 1200px;
+    //     width: 100%;
+    //     padding: 0;
+    //     margin: 0 auto;
+    //     gap: 20px;
+    
+    //     .reviews-header {
+    //         font-family: "Montserrat";
+    //         font-size: 20px;
+    //         font-weight: 600;
+    //         line-height: 33.1px;
+    //         padding: 0px 50px;
+    //         padding-bottom: 0px;
+    //         text-align: center;
+    //         color: $corporative-blue;
+    
+    //         p {
+    //             max-width: 80%;
+    //             justify-self: center;
+    //         }
+    
+    //         &::after {
+    //             content: "";
+    //             display: block;
+    //             min-width: 276px;
+    //             justify-self: center;
+    //             height: 2px;
+    //             background-color: $corporative-red;
+    //             margin-top: 15px;
+    //             margin-bottom: 0px;
+    //         }
+    //     }
+    
+    //     .wrap-swiper{
+    //         display: flex;
+    //         width: 100%;
+    //         height: 100%;
+    //         flex-direction: row;
+    //         padding: 62px 20px 88px 20px;
+    //         gap: 10px;
+    //         margin-bottom: 13px;
+    //         background-color: #FAFAFA;
+
+    //         .swiper {
+        
+    //             .swiper-wrapper {
+    //                 display: flex;
+    //                 flex-direction: row;
+        
+    //                 .swiper-slide {
+    //                     display: flex;
+    //                     flex-direction: column;
+    //                     max-width: 100%;
+    //                     margin: 0 auto;
+    //                     gap: 10px;
+        
+    //                     .new-review {
+    //                         p {
+    //                             font-family: "Montserrat";
+    //                             font-size: 18px;
+    //                             font-weight: 600;
+    //                             line-height: 27.12px;
+    //                             color: $corporative-red;
+    //                         }
+        
+    //                         ul {
+    //                             display: flex;
+    //                             flex-direction: row;
+    //                             flex-wrap: nowrap;
+    //                             list-style: none;
+        
+    //                             img {
+    //                                 width: 24px;
+    //                                 height: auto;
+    //                             }
+    //                         }
+    //                     }
+        
+    //                     p {
+    //                         font-family: "OpenSans";
+    //                         font-weight: 400;
+    //                         font-size: 18px;
+    //                         line-height: 27.12px;
+    //                         color: $corporative-text;
+    //                     }
+    //                 }
+    //             }
+        
+    //             .swiper-pagination-bullet {
+    //                 width: 13px;
+    //                 height: 13px;
+    //                 display: inline-block;
+    //                 border: 1px solid black;
+    //                 border-radius: 50%;
+    //                 background-color: transparent;
+    //                 transition: background-color 0.3s ease;
+    //             }
+                
+    //             .swiper-pagination-bullet-active {
+    //                 background-color: black;
+    //             }
+
+    //             .swiper-button-next, .swiper-button-prev {
+    //                 display: none;
+    //             }
+    //         }
+    //     }
+    
+    //     @media (min-width: $laptop) {
+            
+    //         display: flex;
+    //         flex-direction: column;
+    //         max-width: 1200px;
+    //         width: 100%;
+    //         margin-bottom: 57.13px;
+    
+    //         .reviews-header {
+    //             max-width: 100%;
+    //             width: 100%;
+    //             align-self: center;
+    
+    //             p {
+    //                 font-size: 25px;
+    //                 font-weight: 600;
+    //                 line-height: 1.22rem;
+    //             }
+    
+    //             &::after {
+    //                 content: "";
+    //                 display: block;
+    //                 min-width: 470px;
+    //             }
+    //         }
+    
+    //         .wrap-swiper {
+    //             width: 100%;
+    //             max-width: 1200px;
+    //             padding: 61px 106px;
+    //             margin-bottom: 31.04px;
+
+    //             .swiper{     
+    //                 overflow: hidden;           
+        
+    //                 .swiper-wrapper {
+    //                     display: flex;
+    //                     flex-direction: row;
+    //                     justify-content: center;
+    //                     //overflow: hidden;
+                        
+    //                     .swiper-slide {
+    //                         display: flex;
+    //                         max-width: 840px;
+    //                         margin: 0 auto;
+    //                     }    
+    //                 }
+
+    //                 .swiper-button-next, .swiper-button-prev{
+    //                     display: block;
+    //                     color: $corporative-text;
+    //                     cursor: pointer;
+    //                 }
+    //             }
+    //             .swiper-pagination{
+    //                 display: none;
+    //             }
+
+
+    //         }
+    //     }
+    // }
     
     .contact {
         width: 100%;
