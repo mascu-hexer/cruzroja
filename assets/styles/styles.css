@@ -1083,10 +1083,13 @@ main .reviews-slider .wrap-swiper {
   width: 100%;
   height: 100%;
   flex-direction: row;
-  padding: 62px 20px 88px 20px;
+  padding: 62px 20px 0px 20px;
   gap: 10px;
   margin-bottom: 13px;
   background-color: #FAFAFA;
+}
+main .reviews-slider .wrap-swiper .swiper {
+  padding-bottom: 98px;
 }
 main .reviews-slider .wrap-swiper .swiper .swiper-wrapper {
   display: flex;
@@ -1099,24 +1102,29 @@ main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
   margin: 0 auto;
   gap: 10px;
 }
-main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review p {
+main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review .new-review-header p {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
   line-height: 27.12px;
   color: #F5333F;
 }
-main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review ul {
+main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review .new-review-header ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
 }
-main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review ul img {
+main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review .new-review-header ul img {
   width: 24px;
   height: auto;
 }
-main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide p {
+main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review p {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 18px;
@@ -1131,6 +1139,7 @@ main .reviews-slider .wrap-swiper .swiper .swiper-pagination-bullet {
   border-radius: 50%;
   background-color: transparent;
   transition: background-color 0.3s ease;
+  margin-bottom: 60px;
 }
 main .reviews-slider .wrap-swiper .swiper .swiper-pagination-bullet-active {
   background-color: black;
@@ -1168,24 +1177,36 @@ main .reviews-slider .wrap-swiper .swiper .swiper-button-next, main .reviews-sli
     margin-bottom: 31.04px;
   }
   main .reviews-slider .wrap-swiper .swiper {
+    padding-bottom: 0px;
     overflow: hidden;
-  }
-  main .reviews-slider .wrap-swiper .swiper .swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
   main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide {
     display: flex;
     flex-direction: column;
-    max-width: 840px;
     margin: 0 auto;
+    align-items: center;
+  }
+  main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review, main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide .new-review .stars {
+    align-items: start;
+  }
+  main .reviews-slider .wrap-swiper .swiper .swiper-wrapper .swiper-slide > * {
+    max-width: 840px;
   }
   main .reviews-slider .wrap-swiper .swiper .swiper-button-next, main .reviews-slider .wrap-swiper .swiper .swiper-button-prev {
+    width: 32px;
+    height: 32px;
     display: block;
-    font-size: 32px;
+    font-size: 16px;
     color: #323232;
     cursor: pointer;
+  }
+  main .reviews-slider .wrap-swiper .swiper .swiper-button-prev:after, main .reviews-slider .wrap-swiper .swiper .swiper-rtl .swiper-button-next:after {
+    content: "prev";
+    font-size: 24px;
+  }
+  main .reviews-slider .wrap-swiper .swiper .swiper-button-next:after, main .reviews-slider .wrap-swiper .swiper .swiper-rtl .swiper-button-prev:after {
+    content: "next";
+    font-size: 24px;
   }
   main .reviews-slider .wrap-swiper .swiper-pagination {
     display: none;
