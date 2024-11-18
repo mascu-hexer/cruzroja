@@ -123,6 +123,7 @@ body {
     }
 
     input[type="checkbox"]:checked + label {
+        background-color: #F5333F1A;
         border: none;
     }
 
@@ -217,9 +218,12 @@ header{
                 margin: 0px
             }
     
-            span {
+            a {
+                color: white;
                 font-size: 16px;
                 font-weight: 700;
+                text-align: white;
+                text-decoration: none;
             }
     
             @media (min-width: $laptop) {
@@ -292,6 +296,11 @@ header{
                     gap: 10px;
                     background-color: #FFFFFF;
                     cursor: pointer;
+
+                    &:hover{
+                        background-color: $corporative-red;
+                        color: white;
+                    }
                 }
             }
         }
@@ -672,8 +681,11 @@ main{
                                     font-weight: 400;
                                     line-height: 16.34px;
 
-                                    span {
+                                    a {
+                                        font-family: "OpenSans";
                                         font-weight: 700;
+                                        text-decoration: none;
+                                        color: $form-placeholder;
                                     }
                                 }
                             }
@@ -693,6 +705,10 @@ main{
                             margin-top: 20px;
                             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
                             cursor: pointer;
+
+                            &:hover {
+                                background-color: #D22C2C;
+                            }
                         }
                     }
                 }
@@ -976,23 +992,35 @@ main{
                         background-color: white;
                     }
                 }
-            }
-
-            .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
-                padding: 20px 0px;
-            }
+            }            
     
         }
         @media (min-width: $laptop){      
             margin-bottom: 65px;         
-            .main-container .acordeon label{
-                .frame91{
-                    max-width: 302px;
+            .main-container {
+                h3{
+                    font-size: 30px;
                 }
 
-                &:hover{
-                    background-color: white;  
-                }            
+                .acordeon label{
+                    .frame91{
+                        max-width: 302px;
+                    }
+
+                    &:hover{
+                        background-color: white;  
+                    }            
+                }
+
+                .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+                    padding: 20px 0px;
+                    background-color: white;
+                }
+
+                input[type="checkbox"]:checked + label {
+                    background-color: white;
+                    border: none;
+                }
             }
         }
     }
@@ -1116,7 +1144,8 @@ main{
                 color: white;
             }
 
-            a{                
+            a{      
+                width: 133px;          
                 button{
                     font-family: "Montserrat", sans-serif;
                     font-size: 20px;
@@ -1132,6 +1161,11 @@ main{
                     border: none;
                     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);   
                     cursor: pointer;
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -1158,6 +1192,7 @@ main{
             display: flex;
             flex-direction: column;
             gap: 50px;
+            color: $corporative-text;
     
             .faq-header {
                 font-family: "Montserrat";
@@ -1213,13 +1248,18 @@ main{
                         min-width: 470px;
                     }
                 }
-    
+                    
                 .faq-acordeon-container {
                     box-sizing: border-box;
                     width: 100%;
                     max-width: 100%;
-                    height: auto;
-    
+                    height: auto;  
+                    
+                    input[type="checkbox"]:checked + label {
+                        p{
+                            font-weight: 700;
+                        }
+                    }
                     
                 }
             }            
@@ -1240,11 +1280,11 @@ main{
             font-family: "Montserrat";
             font-size: 20px;
             font-weight: 600;
-            line-height: 33.1px;
+            line-height: 24.38px;
             padding: 0px 50px;
             padding-bottom: 0px;
             text-align: center;
-            color: $corporative-blue;
+            color: $corporative-text;
     
             p {
                 max-width: 80%;
@@ -1527,8 +1567,7 @@ main{
     
                 button {
                     background-color: #FFFFFF;
-                    width: 100%;
-                    max-width: 133px;
+                    width: 133px;
                     padding: 10px;
                     gap: 10px;
                     border: none;
@@ -1540,6 +1579,11 @@ main{
                     color: $corporative-blue;
                     text-align: center;
                     cursor: pointer;
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                     
                 }
             }
@@ -1660,7 +1704,7 @@ main{
             }
         }
         @media (min-width: $laptop){
-            
+            padding: 137.51px 0px 137.51px 0px;
             .pictures-main-container{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -1746,8 +1790,12 @@ footer{
                 max-width: 100%;
                 flex-direction: column;
                 align-items: center;
-                p{
-                    max-width: 100%;     
+                a{
+                    max-width: 100%;
+                    text-decoration: none;
+                    color: $corporative-text;  
+                    font-size: 18px;
+                    font-weight: 400;  
                 }
             }
 
@@ -1755,6 +1803,12 @@ footer{
                 width: 100%;
                 max-width: 100%;
                 justify-items: center;
+                a{
+                    text-decoration: none;
+                    color: $corporative-text;
+                    font-size: 18px;
+                    font-weight: 400; 
+                }
             }
 
             .rrss{

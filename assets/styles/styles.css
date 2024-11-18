@@ -97,6 +97,7 @@ body {
   transform: rotate(180deg);
 }
 .acordeon input[type=checkbox]:checked + label {
+  background-color: rgba(245, 51, 63, 0.1019607843);
   border: none;
 }
 .acordeon .btn-acordeon {
@@ -179,9 +180,12 @@ header .tirilla-header .info h3 {
   font-weight: 400;
   margin: 0px;
 }
-header .tirilla-header .info span {
+header .tirilla-header .info a {
+  color: white;
   font-size: 16px;
   font-weight: 700;
+  text-align: white;
+  text-decoration: none;
 }
 @media (min-width: 1024px) {
   header .tirilla-header .info {
@@ -248,6 +252,10 @@ header .menu-header .frame39 .frame86 a button {
   gap: 10px;
   background-color: #FFFFFF;
   cursor: pointer;
+}
+header .menu-header .frame39 .frame86 a button:hover {
+  background-color: #F5333F;
+  color: white;
 }
 @media (min-width: 1024px) {
   header .menu-header .frame39 {
@@ -577,8 +585,11 @@ main .header-form .header-form-main-container .form-box .frame93 form .frame37 .
   font-weight: 400;
   line-height: 16.34px;
 }
-main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 .policy-checkbox p span {
+main .header-form .header-form-main-container .form-box .frame93 form .frame37 .frame36 .policy-checkbox p a {
+  font-family: "OpenSans";
   font-weight: 700;
+  text-decoration: none;
+  color: #B1B1B1;
 }
 main .header-form .header-form-main-container .form-box .frame93 form .frame37 a button {
   width: 100%;
@@ -594,6 +605,9 @@ main .header-form .header-form-main-container .form-box .frame93 form .frame37 a
   margin-top: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+main .header-form .header-form-main-container .form-box .frame93 form .frame37 a button:hover {
+  background-color: #D22C2C;
 }
 @media (min-width: 768px) {
   main .header-form {
@@ -830,18 +844,26 @@ main .seo-info .main-container .acordeon label .frame91 img {
 main .seo-info .main-container .acordeon label:hover {
   background-color: white;
 }
-main .seo-info .main-container .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
-  padding: 20px 0px;
-}
 @media (min-width: 1024px) {
   main .seo-info {
     margin-bottom: 65px;
+  }
+  main .seo-info .main-container h3 {
+    font-size: 30px;
   }
   main .seo-info .main-container .acordeon label .frame91 {
     max-width: 302px;
   }
   main .seo-info .main-container .acordeon label:hover {
     background-color: white;
+  }
+  main .seo-info .main-container .acordeon input[type=checkbox]:checked + label + .contenido-acordeon {
+    padding: 20px 0px;
+    background-color: white;
+  }
+  main .seo-info .main-container input[type=checkbox]:checked + label {
+    background-color: white;
+    border: none;
   }
 }
 main .doctors {
@@ -952,6 +974,9 @@ main .budget .budget-container p {
   text-align: center;
   color: white;
 }
+main .budget .budget-container a {
+  width: 133px;
+}
 main .budget .budget-container a button {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -967,6 +992,10 @@ main .budget .budget-container a button {
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+main .budget .budget-container a button:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 1024px) {
   main .budget .budget-container {
@@ -988,6 +1017,7 @@ main .faq .faq-main-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  color: #323232;
 }
 main .faq .faq-main-container .faq-header {
   font-family: "Montserrat";
@@ -1043,6 +1073,9 @@ main .faq .faq-main-container .faq-acordeon-container {
     max-width: 100%;
     height: auto;
   }
+  main .faq .faq-main-container .faq-acordeon-container input[type=checkbox]:checked + label p {
+    font-weight: 700;
+  }
 }
 main .reviews-slider {
   display: flex;
@@ -1058,11 +1091,11 @@ main .reviews-slider .reviews-header {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
-  line-height: 33.1px;
+  line-height: 24.38px;
   padding: 0px 50px;
   padding-bottom: 0px;
   text-align: center;
-  color: #011E41;
+  color: #323232;
 }
 main .reviews-slider .reviews-header p {
   max-width: 80%;
@@ -1298,8 +1331,7 @@ main .contact .contact-main-container .frame51 .inputs-container .policy-checkbo
 }
 main .contact .contact-main-container .frame51 button {
   background-color: #FFFFFF;
-  width: 100%;
-  max-width: 133px;
+  width: 133px;
   padding: 10px;
   gap: 10px;
   border: none;
@@ -1311,6 +1343,10 @@ main .contact .contact-main-container .frame51 button {
   color: #011E41;
   text-align: center;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+main .contact .contact-main-container .frame51 button:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 1024px) {
   main .contact {
@@ -1415,6 +1451,9 @@ main .pictures-results .pictures-main-container .frame79 .frame78 {
   gap: 5px;
 }
 @media (min-width: 1024px) {
+  main .pictures-results {
+    padding: 137.51px 0px 137.51px 0px;
+  }
   main .pictures-results .pictures-main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1491,13 +1530,23 @@ footer .more-info-container .more-info-content .phone {
   flex-direction: column;
   align-items: center;
 }
-footer .more-info-container .more-info-content .phone p {
+footer .more-info-container .more-info-content .phone a {
   max-width: 100%;
+  text-decoration: none;
+  color: #323232;
+  font-size: 18px;
+  font-weight: 400;
 }
 footer .more-info-container .more-info-content .address {
   width: 100%;
   max-width: 100%;
   justify-items: center;
+}
+footer .more-info-container .more-info-content .address a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 18px;
+  font-weight: 400;
 }
 footer .more-info-container .more-info-content .rrss {
   display: flex;
